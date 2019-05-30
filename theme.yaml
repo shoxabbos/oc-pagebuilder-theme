@@ -1,6 +1,6 @@
-name: ITmaker
+name: 'PAGE BUILDER - Modular Theme'
 description: 'ITmaker group programming'
-author: 'Bekhzod Juraev'
-homepage: ''
-code: ''
+author: 'IT.MAKER'
+homepage: 'https://itmaker.uz'
+code: 'itmaker'
 form: config/fields.yaml
