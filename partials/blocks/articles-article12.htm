@@ -1,0 +1,50 @@
+[viewBag]
+==
+<section class="cid-rpoGMvd3cL" id="content-{{data.block_layout}}">
+    
+    <div class="container">
+    {% for item in data.image_article12 %}
+        <div class="media-container-row" style="width: 66%;">
+            <div class="img-item item1" style="width: 62%;">
+                <div class="img-cont">
+                    <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(35, 35, 35);"></div>
+                    <img src="{{item.image|media}}">
+                    <div class="img-caption">
+                        <p class="mbr-fonts-style align-left mbr-white display-5">
+                            <a href="{{item.url}}">{{item.text}}</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="img-item">
+                <div class="img-cont">
+                    <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(35, 35, 35);"></div>
+                    <img src="{{item.image_right|media | resize (300)}}">
+                    <div class="img-caption">
+                        <p class="mbr-fonts-style align-left mbr-white display-5">
+                            <a href="{{item.url_right}}">{{item.text_right}}</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</section>
+
+
+
+
+
+<style>
+#content-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#content-{{data.block_layout}} a{    
+        color: {{data.text_color}}!important;
+    }  
+#content-{{data.block_layout}}{
+        padding-top: {{data.height}}!important;
+        padding-bottom: {{data.height}}!important;    
+    }                        
+</style>

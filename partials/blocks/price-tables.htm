@@ -1,0 +1,64 @@
+[viewBag]
+==
+<section class="pricing-table1 cid-rpoH7HVu5K" id="prices-{{data.block_layout}}">
+    
+    <div class="container">
+        <div class="media-container-row">
+           
+            {% for item in data.add_card_w %}
+            <div class="plan col-12 mx-2 my-2 justify-content-center col-lg-3">
+                <div class="plan-header text-center pt-5">
+                    <h3 class="plan-title mbr-fonts-style display-5">
+                        {{item.title}}
+                    </h3>
+                    {% for item in item.price %}
+                    <div class="plan-price">
+                        <span class="price-value mbr-fonts-style display-5">
+                            {{item.price0}}
+                        </span>
+                        <span class="price-figure mbr-fonts-style display-1">
+                              {{item.price1}}</span>
+                        <small class="price-term mbr-fonts-style display-7">
+                            {{item.price2}}
+                        </small>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="plan-body pb-5">
+                    <div class="plan-list align-center">
+                        <ul class="list-group list-group-flush mbr-fonts-style display-7">
+                            <li class="list-group-item">
+                                {{item.description}}
+                            </li>
+                            <li class="list-group-item">
+                                {{item.traffic}}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mbr-section-btn text-center pt-4">
+                        <a href="{{item.url}}" class="btn {{item.color_button}} display-4">{{"КУПИТЬ СЕЙЧАС"|_}}</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}    
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<style>
+#prices-{{data.block_layout}}{
+        background: linear-gradient(45deg, #0f7699, {{data.background_color}})!important;
+    }
+#prices-{{data.block_layout}} li, #prices-{{data.block_layout}} small, #prices-{{data.block_layout}} span, #prices-{{data.block_layout}} h3{    
+        color: {{data.text_color}}!important;
+    }   
+#prices-{{data.block_layout}}{
+        padding-top: {{data.height}}!important;
+        padding-bottom: {{data.height}}!important;    
+    }            
+</style>

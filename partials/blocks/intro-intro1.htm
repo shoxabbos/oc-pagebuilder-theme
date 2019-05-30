@@ -1,0 +1,37 @@
+[viewBag]
+==
+<section class="header1 cid-rpoGdCLftw" id="intro-{{data.block_layout}}">
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 align-center">
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">
+                    {{data.title}}
+                </h1>
+                
+                <p class="mbr-text pb-3 mbr-fonts-style display-5">
+                    {{data.subtitle}}
+                </p>
+                {% for item in data.button_left%}
+                    <div class="mbr-section-btn {{ item.on_off == 1 ? 'd-none' : ''}}"><a class="btn btn-md {{item.color}} display-4" href="{{item.url}}">{{item.text}}</a>
+                    </div>
+                {% endfor %}    
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<style>
+#intro-{{data.block_layout}}{
+        background: {{data.background_color_intro1}}!important; 
+    }
+#intro-{{data.block_layout}} h1, #intro-{{data.block_layout}} p{
+        color: {{data.text_color}};
+    }   
+#intro-{{data.block_layout}}{
+        padding-top: {{data.height}}!important;
+        padding-bottom: {{data.height}}!important;    
+    }        
+</style>

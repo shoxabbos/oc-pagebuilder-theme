@@ -1,0 +1,33 @@
+description = "Static Layout"
+
+[staticPage]
+useContent = 1
+default = 0
+==
+<!DOCTYPE html>
+<html lang="{{ this.theme.site_locale }}">
+<head>
+    {% partial 'site/meta' %}
+    {% partial 'site/css' %}
+</head>
+
+<body class="page-{{ this.page.title }} layout-{{ this.page.layout }}">
+
+    
+    {repeater name="sections" groups="~/themes/itmaker/meta/blocks.yaml" tab="Blocks"}
+        {variable name="_dummy" type="text"}{/variable}
+    {/repeater}
+    
+    
+    {% for section in sections %}
+        {% partial 'blocks/' ~ section._group ~ '-' ~ section.block_layout data=section %}
+    {% endfor %}
+
+    {% page %}
+
+    
+    <!-- Scripts -->
+    {% partial 'site/scripts' %}
+    
+</body>
+</html>

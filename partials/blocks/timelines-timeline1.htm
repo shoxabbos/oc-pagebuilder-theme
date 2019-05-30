@@ -1,0 +1,70 @@
+[viewBag]
+==
+<section class="timeline2 cid-rpoHgOxuCI" id="timeline-{{data.block_layout}}">
+
+    <div class="container align-center">
+        <h2 class="mbr-section-title pb-3 mbr-fonts-style display-2">
+            {{data.title}}
+        </h2>
+        <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style display-5">
+            {{data.description}}
+        </h3>
+
+        {% for key, item in data.add_card_w1 %}
+        {% if key % 2 == 0 %}
+        <div class="container timelines-container" mbri-timelines="">
+            <div class="row timeline-element reverse separline">      
+                <span class="iconsBackground">
+                    <span class="{{item.icon}}" style=" color: {{item.color_icon}};"></span>
+                </span>          
+                <div class="col-xs-12 col-md-6 align-left">
+                    <div class="timeline-text-content">
+                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
+                            {{item.title}}
+                        </h4>
+                        <p class="mbr-timeline-text mbr-fonts-style display-7">
+                            {{item.description}}
+                        </p>
+                     </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="row timeline-element  separline">
+                <span class="iconsBackground">
+                    <span class="{{item.icon}}" style=" color: {{item.color_icon}};"></span>
+                </span>
+                <div class="col-xs-12 col-md-6 align-left ">
+                    <div class="timeline-text-content">
+                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
+                            {{item.title}}
+                        </h4>
+                        <p class="mbr-timeline-text mbr-fonts-style display-7">
+                            {{item.description}}
+                        </p>
+                    </div>
+                </div>
+            </div> 
+            {% endif %}
+            {% endfor %}
+ 
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<style>
+#timeline-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#timeline-{{data.block_layout}} h4, #timeline-{{data.block_layout}} p, #timeline-{{data.block_layout}} h3, #timeline-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#timeline-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

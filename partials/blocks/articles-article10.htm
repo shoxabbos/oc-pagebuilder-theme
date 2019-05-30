@@ -1,0 +1,32 @@
+[viewBag]
+==
+<section class="mbr-section content8 cid-rpoGLtBJ6H" id="content-{{data.block_layout}}">
+
+    <div class="container">
+        <div class="media-container-row title">
+            <div class="col-12 col-md-8">
+                <div class="mbr-section-btn align-center">
+                {% for item in data.button_left %}
+                    <a class="btn {{item.color}} display-4 {{item.on_off == 1 ? 'd-none' : ''}}" href="{{item.url}}">{{item.text}}</a>
+                {% endfor %}    
+                {% for item in data.button_right %}
+                    <a class="btn {{item.color}} display-4 {{item.on_off == 1 ? 'd-none' : ''}}" href="{{item.url}}">{{item.text}}</a>
+                {% endfor %}    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<style>
+#content-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#content-{{data.block_layout}}{
+        padding-top: {{data.height}}!important;
+        padding-bottom: {{data.height}}!important;    
+    }                        
+</style>

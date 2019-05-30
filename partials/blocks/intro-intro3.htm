@@ -1,0 +1,47 @@
+[viewBag]
+==
+<section class="header4 cid-rpoGeDBHun mbr-parallax-background" id="intro-{{data.block_layout}}">
+
+    <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(35, 35, 35);">
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="media-content col-md-10">
+                <h1 class="mbr-section-title align-center mbr-white pb-3 mbr-bold mbr-fonts-style display-1">
+                    {{data.title}}
+                </h1>
+                
+                <div class="mbr-text align-center mbr-white pb-3">
+                    <p class="mbr-text mbr-fonts-style display-5">
+                        {{data.subtitle}}
+                    </p>
+                </div>
+                <div class="mbr-section-btn align-center">
+                    {% for item in data.button_left%}
+                        <a class="btn btn-md {{item.color}} display-4 {{item.on_off == 1 ? 'd-none' : ''}}" href="{{item.url}}">{{item.text}}</a>
+                    {% endfor %}
+                    {% for item in data.button_right%}
+                        <a class="btn btn-md {{item.color}} display-4 {{item.on_off == 1 ? 'd-none' : ''}}" href="{{item.url}}">{{item.text}}</a>
+                    {% endfor %}    
+                </div>
+            </div>
+            <div class="mbr-figure pt-5">
+                <img src="{{data.image_intro3|media}}" alt="{{data.title}}" style="width: 60%;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+#intro-{{data.block_layout}}{
+        background-image: url({{data.background_image_intro3|media}})!important;        
+    }
+#intro-{{data.block_layout}} h1, #intro-{{data.block_layout}} p {
+        color: {{data.text_color}};
+    } 
+#intro-{{data.block_layout}}{
+        padding-top: {{data.height}}!important;
+        padding-bottom: {{data.height}}!important;    
+    }            
+</style>

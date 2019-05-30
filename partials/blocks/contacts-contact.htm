@@ -1,0 +1,66 @@
+[viewBag]
+==
+<section class="mbr-section contacts1 cid-rpoHAskQkX" id="contacts-{{data.block_layout}}">
+    
+    <div class="container">
+        <div class="row">
+            <!--Titles-->
+            <div class="title col-12">
+                <h2 class="align-left mbr-fonts-style display-1">
+                    {{"Our Contacts"|_}}
+                </h2>
+                
+            </div>
+            <!--Left-->
+            <div class="col-12 col-md-6">
+                <div class="left-block wrapper">
+                    <div class="b b-adress">
+                        <h5 class="align-left mbr-fonts-style m-0 display-5">
+                            {{"Address:"|_}}
+                        </h5>
+                        <p class="mbr-text align-left mbr-fonts-style display-7">
+                            {{data.address}}
+                        </p>
+                    </div>
+                    <div class="b b-phone">
+                        <h5 class="align-left mbr-fonts-style m-0 display-5">
+                            {{"Phone:"|_}}
+                        </h5>
+                        <p class="mbr-text align-left mbr-fonts-style display-7">
+                            {{data.phone}}
+                        </p>
+                    </div>
+                    <div class="b b-mail">
+                        <h5 class="align-left mbr-fonts-style m-0 display-5">
+                            {{"E-mail:"|_}}
+                        </h5>
+                        <p class="mbr-text align-left mbr-fonts-style display-7">
+                            {{data.email}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--Right-->
+            <div class="col-12 col-md-6">
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCx3d07zxHPLvkFBLlAR3Ng8a9wsAsGoJ8&amp;q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw" allowfullscreen=""></iframe></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<style>
+#contacts-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#contacts-{{data.block_layout}} h5, #contacts-{{data.block_layout}} p, #contacts-{{data.block_layout}} h3, #contacts-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#contacts-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

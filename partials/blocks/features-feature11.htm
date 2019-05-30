@@ -1,0 +1,53 @@
+[viewBag]
+==
+<section class="features18 popup-btn-cards cid-rpoH0BEAZS" id="features-{{data.block_layout}}">
+
+    <div class="container">
+        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">
+            {{data.title_feature12}}
+        </h2>
+        <h3 class="mbr-section-subtitle display-5 align-center mbr-fonts-style mbr-light">
+            {{data.description_feature12}}
+        </h3>
+        <div class="media-container-row pt-5 ">
+        {% for item in data.add_card_s10 %}
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="card-wrapper ">
+                    <div class="card-img">
+                        <div class="mbr-overlay"></div>
+                        <div class="mbr-section-btn text-center">
+                            <a href="{{item.url}}" class="btn {{item.color_button}} display-4">{{"Подробнее"|_}}</a>
+                        </div>
+                        <img src="{{item.image|media}}" alt="ITmaker">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-7">
+                            {{item.title}}
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style align-left display-7">
+                            {{item.description}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}    
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+<style>
+#features-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#features-{{data.block_layout}} h4, #features-{{data.block_layout}} h3, #features-{{data.block_layout}} p, #features-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#features-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

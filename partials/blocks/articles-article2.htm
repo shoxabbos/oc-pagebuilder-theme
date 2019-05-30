@@ -1,0 +1,33 @@
+[viewBag]
+==
+<section class="mbr-section article content9 cid-rpoGDTSMEi" id="content-{{data.block_layout}}">
+
+    <div class="container">
+        <div class="inner-container" style="width: 100%;">
+            <hr class="line" style="width: 25%;">
+            <div class="section-text align-center mbr-fonts-style display-5">
+                    <p>{{data.description_a1}}</p>
+                </div>
+            <hr class="line" style="width: 25%;">
+        </div>
+        </div>
+</section>
+
+
+
+
+<style>
+#content-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#content-{{data.block_layout}} h2, #content-{{data.block_layout}} p{    
+        color: {{data.text_color}}!important;
+    }
+#content-{{data.block_layout}} .line{
+        background-color: {{data.line_color}};
+    }    
+#content-{{data.block_layout}}{
+        padding-top: {{data.height}}!important;
+        padding-bottom: {{data.height}}!important;    
+    }                        
+</style>

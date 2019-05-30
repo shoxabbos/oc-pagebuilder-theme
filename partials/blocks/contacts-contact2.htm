@@ -1,0 +1,95 @@
+[viewBag]
+==
+<section class="mbr-section contacts3 cid-rpoHCOumwf" id="contacts-{{data.block_layout}}">
+    
+    <div class="container">
+        <div class="row">
+            <!--Titles-->
+            <div class="title col-12">
+                <h2 class="align-left mbr-fonts-style display-1">
+                    {{"Our Contacts"|_}}
+                </h2>
+                
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="wrapper">
+                            <span class="iconfont-wrapper">
+                                <span class="amp-iconfont icon fa-thumbs-o-up fa"></span>
+                            </span>
+                            <div class="b-info b-adress">
+                                <h5 class="align-left mbr-fonts-style display-5">
+                                    {{"Address:"|_}}
+                                </h5>
+                                <p class="mbr-text align-left mbr-fonts-style display-7">
+                                    {{data.address_a}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="wrapper">
+                            <span class="iconfont-wrapper">
+                                <span class="amp-iconfont fa-phone fa"></span>
+                            </span>
+                            <div class="b-info b-phone">
+                                <h5 class="align-left mbr-fonts-style display-5">
+                                    {{"Phone:"|_}}
+                                </h5>
+                                <p class="mbr-text align-left mbr-fonts-style display-7">
+                                    {{data.phone_a}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="wrapper">
+                            <span class="iconfont-wrapper">
+                                <span class="icon-comment-o"></span>
+                            </span>
+                            <div class="b-info b-mail">
+                                <h5 class="align-left mbr-fonts-style display-5">
+                                    {{"E-mail:"|_}}
+                                </h5>
+                                <p class="mbr-text align-left mbr-fonts-style display-7">
+                                    {{data.email_a}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="wrapper">
+                            <span class="iconfont-wrapper">
+                                <span class="amp-iconfont icon fa-th-large fa"></span>
+                            </span>
+                            <div class="b-info b-mail">
+                                <h5 class="align-left mbr-fonts-style display-5">
+                                    {{"Working Hours:"|_}}
+                                </h5>
+                                <p class="mbr-text align-left mbr-fonts-style display-7">
+                                    {{data.work}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<style>
+#contacts-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#contacts-{{data.block_layout}} h5, #contacts-{{data.block_layout}} p, #contacts-{{data.block_layout}} h3, #contacts-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#contacts-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

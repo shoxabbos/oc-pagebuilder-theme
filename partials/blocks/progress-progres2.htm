@@ -1,0 +1,54 @@
+[viewBag]
+==
+<section class="progress-bars3 cid-rpoHe6Pf1z" id="progress-{{data.block_layout}}">
+ 
+    <div class="container">
+        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">
+            {{data.title}}
+        </h2>
+
+        <h3 class="mbr-section-subtitle mbr-fonts-style display-5">
+            {{data.description}}
+        </h3>
+    
+        <div class="media-container-row pt-5 mt-2">
+        
+        {% for item in data.add_item %}         
+            <div class="card p-3 align-center">
+                <div class="wrap">
+                    <div class="pie_progress progress1" role="progressbar" data-goal="{{item.percent}}">
+                        <p class="pie_progress__number mbr-fonts-style display-5"></p>
+                    </div>
+                </div> 
+                <div class="mbr-crt-title pt-3">
+                    <h4 class="card-title py-2 mbr-fonts-style display-5">
+                        {{item.title}}
+                    </h4>
+                </div>                 
+            </div>
+        {% endfor %}    
+
+        </div>
+    </div>
+</section>
+
+
+
+<style>
+#progress-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#progress-{{data.block_layout}} .progressbar-number:before{
+        content: '';
+    }    
+#progress-{{data.block_layout}} h4, #progress-{{data.block_layout}} h3, #progress-{{data.block_layout}} p, #progress-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#progress-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }     
+#progress-{{data.block_layout}} path{
+        stroke: {{data.color_progress}}!important;
+    }     
+</style>

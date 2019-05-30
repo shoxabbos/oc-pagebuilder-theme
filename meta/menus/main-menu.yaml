@@ -1,0 +1,36 @@
+name: 'main menu'
+items:
+    -
+        title: Home
+        nesting: '1'
+        type: static-page
+        code: ''
+        reference: demo
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'About Us'
+        nesting: '1'
+        type: static-page
+        code: ''
+        reference: demo
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: Services
+                nesting: '1'
+                type: static-page
+                code: ''
+                reference: demo
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'

@@ -1,0 +1,34 @@
+[viewBag]
+==
+<section class="mbr-section article content14 cid-rpoGJlUScj" id="content-{{data.block_layout}}">
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="row col-12 col-md-12">
+                {% for item in data.items_w1%}
+                <div class="col-12 mbr-text mbr-fonts-style col-md display-7">
+                     {{item.content_c|raw}}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<style>
+#content-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#content-{{data.block_layout}} p{
+        background: transparent;
+    }        
+#content-{{data.block_layout}} .mbr-text{    
+        color: {{data.text_color}}!important;
+    }   
+#content-{{data.block_layout}}{
+        padding-top: {{data.height}}!important;
+        padding-bottom: {{data.height}}!important;    
+    }                        
+</style>

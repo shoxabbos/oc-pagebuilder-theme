@@ -1,0 +1,44 @@
+[viewBag]
+==
+<section class="cid-rpoGaDR38T mbr-fullscreen mbr-parallax-background" id="intro-{{data.block_layout}}">
+
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(35, 35, 35);"></div>
+
+    <div class="container align-center">
+        <div class="row justify-content-md-center">
+            <div class="mbr-white col-md-10">
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">
+                    {{data.title}}
+                </h1>
+                
+                <p class="mbr-text pb-3 mbr-fonts-style display-5">
+                    {{data.subtitle}}
+                </p>
+                <div class="mbr-section-btn">
+                {% for item in data.button_left%}
+                    <a class="btn btn-md {{item.color}} display-4 {{item.on_off == 1 ? 'd-none' : ''}}" href="{{item.url}}">{{item.text}}</a>
+                {% endfor %}    
+                {% for item in data.button_right%}    
+                    <a class="btn btn-md {{item.color}} display-4 {{item.on_off == 1 ? 'd-none' : ''}}" href="{{item.url}}">{{item.text}}</a>
+                {% endfor %}    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+
+<style>
+#intro-{{data.block_layout}}{
+        background-image: url({{data.background_image_intro|media}})!important;        
+    }
+#intro-{{data.block_layout}} h1, #intro-{{data.block_layout}} p{
+        color: {{data.text_color}};
+    }
+#intro-{{data.block_layout}}{
+        padding-top: {{data.height}}!important;
+        padding-bottom: {{data.height}}!important;    
+    }    
+</style>

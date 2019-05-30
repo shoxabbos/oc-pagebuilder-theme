@@ -1,0 +1,72 @@
+[viewBag]
+==
+<section class="tabs4 cid-rpoHnk8CRm" id="tabs-{{data.block_layout}}">
+
+    <div class="container">
+        <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">
+            {{data.title}}
+        </h2>
+        
+
+        <div class="media-container-row mt-5 pt-3">
+            <div class="mbr-figure" style="width: 60%;">
+                <img src="{{data.background_image_w|media}}" alt="ITmaker">
+            </div>
+            <div class="tabs-container">
+                <ul class="nav nav-tabs" role="tablist">
+                
+                {% for key, item in data.add_button_w3 %}
+                    <li class="nav-item">
+                        <a class="nav-link {{ key == 1 ? 'active' : ''}} mbr-fonts-style display-7" role="tab" data-toggle="tab" href="#tab{{key}}">
+                            {{item.title}}
+                        </a>
+                    </li>
+                {% endfor %}    
+                    
+                </ul>
+                <div class="tab-content">
+                
+                {% for item in data.add_content_w1 %}                
+                    <div id="tab{{key}}" class="tab-pane in {{ key == 1 ? 'active' : ''}}" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="mbr-text py-5 mbr-fonts-style display-7">
+                                    {{item.description}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}    
+                                        
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<style>
+#tabs-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#tabs-{{data.block_layout}} .nav-tabs .nav-link .active:hover{
+        background-color: {{data.button_color_c2}}!important;
+    }
+#tabs-{{data.block_layout}} .nav-tabs .nav-link.active{    
+        background: {{data.button_color_c2}}!important;
+        border-color: {{data.button_color_c2}}!important;
+    }
+#tabs-{{data.block_layout}} .nav-tabs .nav-link:hover{
+        background-color: {{data.button_color_c2}}!important;
+    }
+#tabs-{{data.block_layout}} h4, #tabs-{{data.block_layout}} p, #tabs-{{data.block_layout}} h3, #tabs-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#tabs-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

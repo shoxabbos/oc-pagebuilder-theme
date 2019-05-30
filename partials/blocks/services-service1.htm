@@ -1,0 +1,52 @@
+[viewBag]
+==
+<section class="services2 cid-rpoH3eshel" id="services-{{data.block_layout}}">
+
+    <div class="container">
+        <div class="col-md-12">
+        {% for item in data.add_card_w1 %}
+            <div class="media-container-row">
+                <div class="mbr-figure" style="width: 50%;">
+                    <img src="{{item.image|media}}" alt="ITmaker">
+                </div>
+                <div class="align-left aside-content">
+                    <h2 class="mbr-title pt-2 mbr-fonts-style display-2">
+                        {{item.title}}
+                    </h2>
+                    <div class="mbr-section-text">
+                        <p class="mbr-text text1 pt-2 mbr-light mbr-fonts-style display-7">
+                            {{item.description}}
+                        </p>
+                        <p class="mbr-text text2 pt-4 mbr-light mbr-fonts-style display-2">
+                            {{item.price_new}} <span class="cost">{{item.price_old}}</span>
+                        </p>
+                    </div>
+                    <!--Btn-->
+                    <div class="mbr-section-btn pt-3 align-left">
+                        <a href="https://mobirise.co" class="btn {{item.color_button}} display-4">
+                            {{"Buy Now"|_}}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}    
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+<style>
+#services-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#services-{{data.block_layout}} h4, #services-{{data.block_layout}} p, #services-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#services-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

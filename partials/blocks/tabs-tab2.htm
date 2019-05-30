@@ -1,0 +1,84 @@
+[viewBag]
+==
+<section class="tabs3 cid-rpoHmm9CoS" id="tabs-{{data.block_layout}}">
+
+    <div class="container">
+        <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">
+           {{data.title}}
+        </h2>
+        <h3 class="mbr-section-subtitle  display-5 align-center mbr-light mbr-fonts-style">
+            {{data.description}}
+        </h3>
+    </div>
+    <div class="container-fluid">
+        <div class="row tabcont">
+            <ul class="nav nav-tabs pt-3 mt-5" role="tablist">
+                
+            {% for key, item in data.add_button_w2 %}    
+                <li class="nav-item mbr-fonts-style">
+                    <a class="nav-link {{ key == 1 ? 'active' : '' }} display-7" role="tab" data-toggle="tab" href="#tab{{key}}">
+                        {{item.title}}
+                    </a>
+                </li>     
+            {% endfor %}    
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row px-1">
+            <div class="tab-content">
+            
+            {% for key, item in data.add_content_w %}               
+                <div id="tab{{key}}" class="tab-pane in {{ key == 1 ? 'active' : '' }} mbr-table" role="tabpanel">
+                    <div class="row tab-content-row">
+                    
+                    {% for item in item.add_item %}    
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="card-img ">
+                                <span class="{{item.icon}}" style=" color: {{item.icon_color}};"></span>
+                            </div>
+                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
+                                {{item.title}}
+                            </h4>
+                            <p class="mbr-section-text  align-center mbr-fonts-style display-7">
+                                {{item.description}}
+                            </p>
+                        </div>
+                    {% endfor %}
+                        
+                    </div>
+                </div>
+            {% endfor %}    
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<style>
+#tabs-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#tabs-{{data.block_layout}} .nav-tabs .nav-link .active:hover{
+        background-color: {{data.button_color_c1}}!important;
+    }
+#tabs-{{data.block_layout}} .nav-tabs .nav-link.active{    
+        background: {{data.button_color_c1}}!important;
+        border-color: {{data.button_color_c1}}!important;
+    }
+#tabs-{{data.block_layout}} .nav-tabs .nav-link:hover{
+        background-color: {{data.button_color_c1}}!important;
+    }
+#tabs-{{data.block_layout}} h4, #tabs-{{data.block_layout}} p, #tabs-{{data.block_layout}} h3, #tabs-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#tabs-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

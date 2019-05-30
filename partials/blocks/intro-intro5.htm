@@ -1,0 +1,51 @@
+[viewBag]
+==
+<section class="header9 cid-rpoGgfn4z5 mbr-fullscreen mbr-parallax-background" id="intro-{{data.block_layout}}">
+
+    <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(255, 255, 255);">
+    </div>
+
+    <div class="container">
+        <div class="media-container-column mbr-white col-lg-8 col-md-10">
+            <h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-1">
+                {{data.title}}
+            </h1>
+            <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-2">
+                {{data.subtitle}}
+            </h3>
+            <p class="mbr-text align-left pb-3 mbr-fonts-style display-5">
+                {{data.content}}
+            </p>
+            <div class="mbr-section-btn align-left">
+                {% for item in data.button_left %}    
+                    <a class="btn btn-md {{item.color}} display-4 {{item.on_off == 1 ? 'd-none' : ''}}" href="{{item.url}}">{{item.text}}</a>
+                {% endfor %}
+                {% for item in data.button_right %}
+                    <a class="btn btn-md {{item.color}} display-4 {{item.on_off == 1 ? 'd-none' : ''}}" href="{{item.url}}">{{item.text}}</a>
+                {% endfor %}    
+            </div>
+        </div>
+    </div>
+
+    {% for item in data.next_intro5 %}
+        <div class="mbr-arrow hidden-sm-down {{item.on_off == 1 ? 'd-none' : ''}}" aria-hidden="true">
+            <a href="{{item.url}}">
+                <i class="mbri-down mbr-iconfont"></i>
+            </a>
+        </div>
+    {% endfor %}    
+</section>
+
+
+<style>
+#intro-{{data.block_layout}}{
+        background-image: url({{data.background_image_intro5|media}})!important;        
+    }
+#intro-{{data.block_layout}} h1, #intro-{{data.block_layout}} h3, #intro-{{data.block_layout}} p {
+        color: {{data.text_color}};
+    }    
+#intro-{{data.block_layout}}{
+        padding-top: {{data.height}}!important;
+        padding-bottom: {{data.height}}!important;    
+    }            
+</style>

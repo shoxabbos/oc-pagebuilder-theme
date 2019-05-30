@@ -1,0 +1,35 @@
+[viewBag]
+==
+<section class="mbr-section article content1 cid-rpoGGc26cR" id="content-{{data.block_layout}}">  
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">
+                <blockquote>
+                        {{data.content_c|raw}}
+                </blockquote>             
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<style>
+#content-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#content-{{data.block_layout}} blockquote{    
+        color: {{data.text_color}}!important;
+    }
+#content-{{data.block_layout}} blockquote{    
+        border-color: {{data.line_color_c}}!important;
+    }  
+#content-{{data.block_layout}}{
+        padding-top: {{data.height}}!important;
+        padding-bottom: {{data.height}}!important;    
+    }                        
+</style>

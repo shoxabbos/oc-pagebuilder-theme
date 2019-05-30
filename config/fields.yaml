@@ -1,0 +1,87 @@
+tabs:
+    fields:
+    
+        ####################################################
+        # Tab: Info
+        ####################################################
+        
+        setting_section:
+            tab: Settings
+            label: Settings
+            type: section
+        
+        settings_favicon:
+            tab: Settings
+            label: Favicon Image
+            type: mediafinder
+            mode: image
+            span: left
+                
+        site_name:
+            tab: Settings
+            label: Website Name
+            type: text
+            default: "" 
+            span: right
+            
+        ####################################################
+        # Tab: Fonts
+        #################################################### 
+        
+        fonts_section:
+            tab: Fonts
+            label: Fonts
+            type: section
+            
+        fonts_googlefonts:
+            tab: Fonts
+            label: Google Fonts
+            type: switch
+            default: true
+            span: left
+
+        fonts_google_fontfamily:
+            tab: Fonts
+            label: Google Font Family
+            type: text
+            comment: Separate each font with vertical slash |
+            default: "Raleway:100,600|Lato:300"
+            span: right
+            trigger:
+                action: show
+                field: fonts_googlefonts
+                condition: checked
+        
+        fonts_fontawesome:
+            tab: Fonts
+            label: FontAwesome Icon Fonts
+            type: switch
+            default: true
+            span: left
+                
+        fonts_first_font:
+            tab: Fonts
+            label: First Font
+            type: text
+            comment: Specify font family
+            default: "'Lato', sans-serif"
+            assetVar: "first_font"
+            span: right
+            trigger:
+                action: show
+                field: fonts_googlefonts
+                condition: checked
+                
+        fonts_second_font:
+            tab: Fonts
+            label: Second Font
+            type: text
+            comment: Specify font family
+            default: "'Raleway', sans-serif"
+            assetVar: "second_font"
+            span: right
+            trigger:
+                action: show
+                field: fonts_googlefonts
+                condition: checked
+            

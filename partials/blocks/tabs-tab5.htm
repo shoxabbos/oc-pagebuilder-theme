@@ -1,0 +1,57 @@
+[viewBag]
+==
+<section class="accordion2 cid-rpoHpFY1EJ" id="accordion-{{data.block_layout}}">
+    
+    <div class="container">
+        <div class="media-container-row pt-5">
+            <div class="accordion-content">
+                <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">
+                        {{data.title}}
+                </h2>
+                
+                <div id="bootstrap-accordion_91" class="panel-group accordionStyles accordion pt-5 mt-3" role="tablist" aria-multiselectable="true">
+                
+                {% for key, item in data.add_accordion_w1 %}
+                        <div class="card">
+                            <div class="card-header" role="tab" id="a_{{key}}">
+                                <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-core="" href="#b_{{key}}" aria-expanded="false" aria-controls="collapse1">
+                                    <h4 class="mbr-fonts-style display-5">
+                                        <span class="sign mbr-iconfont mbri-arrow-down inactive"></span>
+                                        {{item.title}}
+                                    </h4>
+                                </a>
+                            </div>
+                            <div id="b_{{key}}" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="add-{{key}}" data-parent="#bootstrap-accordion_91">
+                                <div class="panel-body p-4">
+                                    <p class="mbr-fonts-style panel-text display-7">
+                                       {{item.description}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                        
+                </div>
+            </div>
+            <div class="mbr-figure" style="width: 105%;">
+                    <img src="{{data.background_image_w1|media}}" alt="ITmaker">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<style>
+#accordion-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#accordion-{{data.block_layout}} h4, #accordion-{{data.block_layout}} p, #accordion-{{data.block_layout}} h3, #accordion-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#accordion-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

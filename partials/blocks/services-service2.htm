@@ -1,0 +1,60 @@
+[viewBag]
+==
+<section class="services3 cid-rpoH4grZDo" id="services-{{data.block_layout}}">
+    
+    <div class="container">
+        <div class="row">
+            <!--Titles-->
+            <div class="title pb-5 col-12">
+                <h2 class="align-left mbr-fonts-style display-1">
+                    {{data.title_service2}}
+                </h2>
+                
+            </div>
+            
+            {% for item in data.add_card_w2  %}    
+            <div class="card px-3 col-12 col-md-6">
+                <div class="card-wrapper media-container-row media-container-row">
+                    <div class="card-box">
+                        <a href="{{item.url}}">
+                            <div class="top-line pb-1">
+                                <h4 class="card-title mbr-fonts-style display-5">
+                                    {{item.title}}
+                                </h4>
+                                <p class="mbr-text card-title cost mbr-fonts-style m-0 display-5">
+                                    {{item.price}}
+                                </p>
+                            </div>
+                            <div class="bottom-line">
+                                <p class="mbr-text mbr-fonts-style display-7">
+                                    {{item.description}}
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+<style>
+#services-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#services-{{data.block_layout}} a, #services-{{data.block_layout}} p, #services-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#services-{{data.block_layout}} h4:hover{
+        color: #8a0000;                
+    }    
+#services-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

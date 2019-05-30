@@ -1,0 +1,132 @@
+[viewBag]
+==
+<section class="footer3 cid-rpoJ6shOzt" id="footer-{{data.block_layout}}">
+
+    <div class="container">
+        <div class="media-container-row content">
+            <div class="col-md-2 col-sm-4">
+                <div class="mb-3 img-logo">
+                    <a href="https://mobirise.co/">
+                         <img src="{{data.image_logo_w|media}}" alt="ITmaker">
+                    </a>
+                </div>
+                <p class="mbr-fonts-style foot-logo display-7">
+                    {{"ITmaker"|_}}
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <p class="mb-4 mbr-fonts-style foot-title display-7">
+                    {{"НОВОСТИ"|_}}
+                </p>
+                <p class="mbr-text mbr-links-column mbr-fonts-style display-7">
+                    {% for item in data.news %}
+                    <a href="#" class="text-black">{{item.text}}</a></br>
+                    {% endfor %}
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <p class="mb-4 mbr-fonts-style foot-title display-7">
+                    {{"КАТЕГОРИИ"|_}}
+                </p>
+                <p class="mbr-text mbr-fonts-style mbr-links-column display-7">
+                    {% for item in data.categorys %}
+                    <a href="#" class="text-black">{{item.text}}</a></br>
+                    {% endfor %}
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <p class="mb-4 mbr-fonts-style foot-title display-7">
+                    {{"ПОДПИСАТЬСЯ"|_}}
+                </p>
+                {% for item in data.subscribe %}
+                <p class="mbr-text form-text mbr-fonts-style display-7">
+                    {{item.text}}
+                </p>
+                {% endfor %}
+                <div class="media-container-column" data-form-type="formoid">
+                    <div data-form-alert="" hidden="" class="align-center">
+                        {{"Спасибо за заполнение анкеты!"|_}}
+                    </div>
+
+                    <form class="form-inline" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form">
+                        <input type="hidden" value="Z1a6JIkWRQ4xWO6Nvq8JHRl1QIy4CkHQsR3sFL/dbyW3+RmzrU6Tcbj8Y2JIiUxujDT7ia3wgvuPua6UcgulMpOwv6aT7bN95Ic0dKbwvd5oJQHnI5zvvcK8ft41+caR" data-form-email="true">
+                        <div class="form-group">
+                            <input type="email" class="form-control input-sm input-inverse my-2" name="email" required="" data-form-field="Email" placeholder="Email" id="email-footer3-3e">
+                        </div>
+                        <div class="input-group-btn m-2">
+                            <button href="" class="btn btn-primary display-4" type="submit" role="button">{{"Подписаться"|_}}</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="media-container-row">
+                <div class="col-sm-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="media-container-row">
+                <div class="col-sm-6 copyright">
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        {{"© Copyright 2019 ITmaker - All Rights Reserved"|_}}
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-list align-right">
+                        <div class="soc-item {{ data.on_off_twitter == 1 ? 'd-none' : ''}}">
+                            <a href="https://twitter.com" target="_blank">
+                                <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item {{ data.on_off_facebook == 1 ? 'd-none' : ''}}">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item {{ data.on_off_youtube == 1 ? 'd-none' : ''}}">
+                            <a href="https://www.youtube.com" target="_blank">
+                                <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item {{ data.on_off_instagram == 1 ? 'd-none' : ''}}">
+                            <a href="https://instagram.com" target="_blank">
+                                <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item {{ data.on_off_google == 1 ? 'd-none' : ''}}">
+                            <a href="https://plus.google.com" target="_blank">
+                                <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item {{ data.on_off_behance == 1 ? 'd-none' : ''}}">
+                            <a href="https://www.behance.net" target="_blank">
+                                <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<style>
+#footer-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#footer-{{data.block_layout}} span{
+        color: #939191;
+    }    
+#footer-{{data.block_layout}} a, #footer-{{data.block_layout}} h3, #footer-{{data.block_layout}} p, #footer-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#footer-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

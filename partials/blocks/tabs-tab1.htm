@@ -1,0 +1,68 @@
+[viewBag]
+==
+<section class="tabs2 cid-rpoHlm9EnZ" id="tabs-{{data.block_layout}}">
+
+    <div class="container">
+        <h2 class="mbr-section-title align-center pb-5 mbr-fonts-style display-2">
+            {{data.title}}
+        </h2>
+        <div class="media-container-row">
+            <div class="col-12 col-md-8">
+                <ul class="nav nav-tabs" role="tablist">
+                
+                {% for key, item in data.add_button_w1 %}
+                    <li class="nav-item">
+                        <a class="nav-link {{ item == 1 ? 'active' : '' }} mbr-fonts-style display-7" role="tab" data-toggle="tab" href="#tab{{key}}">
+                            {{item.title}}
+                        </a>
+                    </li>
+                {% endfor %}    
+                    
+                </ul>
+                <div class="tab-content">
+                
+                {% for key, item in data.add_description_w1 %}    
+                    <div id="tab{{key}}" class="tab-pane in {{ item == 1 ? 'active' : '' }}" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="mbr-text py-5 mbr-fonts-style display-7">
+                                    {{item.description}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<style>
+#tabs-{{data.block_layout}}{
+        background: linear-gradient(0deg, #c1c1c1, {{data.background_color}})!important;        
+    }
+#tabs-{{data.block_layout}} .nav-tabs .nav-link .active:hover{
+        background-color: {{data.button_color_c}}!important;
+    }
+#tabs-{{data.block_layout}} .nav-tabs .nav-link.active{    
+        background: {{data.button_color_c}}!important;
+        border-color: {{data.button_color_c}}!important;
+    }
+#tabs-{{data.block_layout}} .nav-tabs .nav-link:hover{
+        background-color: {{data.button_color_c}}!important;
+    }
+#tabs-{{data.block_layout}} h4, #tabs-{{data.block_layout}} p, #tabs-{{data.block_layout}} h3, #tabs-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#tabs-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

@@ -1,0 +1,56 @@
+[viewBag]
+==
+<section class="features8 cid-rpoGSuf6qB mbr-parallax-background" id="features-{{data.block_layout}}">
+
+    <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(35, 35, 35);">
+    </div>
+
+    <div class="container">
+        <div class="media-container-row">
+        {% for item in data.add_card_s3 %}
+            <div class="card  col-12 col-md-6 col-lg-4">
+                <div style="background: linear-gradient({{data.background_card_a2}}, transparent);">
+                    <div class="card-img bg-transparent">
+                        <span class="{{item.icon}} color"></span>
+                    </div>
+                    <div class="card-box align-center" style="background: none;">
+                        <h4 class="card-title mbr-fonts-style display-7">
+                            {{item.title}}
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                           {{item.description}}
+                        </p>
+                        <div class="mbr-section-btn text-center">
+                            <a href="{{item.url}}" class="btn {{item.color_button}} display-4">
+                                {{"Еще"|_}}
+                            </a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        {% endfor %}    
+            
+        </div>
+    </div>
+    
+</section>
+
+
+
+
+
+<style>
+#features-{{data.block_layout}}{
+        background: {{data.background_color}}!important;        
+    }
+#features-{{data.block_layout}}{
+        background-image: url("{{data.background_image|media}}")!important;
+    }
+#features-{{data.block_layout}} h4, #features-{{data.block_layout}} p, #features-{{data.block_layout}} .color{    
+        color: {{data.text_color}}!important;
+    }      
+#features-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

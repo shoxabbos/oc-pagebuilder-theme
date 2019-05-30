@@ -1,0 +1,26 @@
+description = "Css"
+
+[viewBag]
+==
+<!-- Fonts -->
+{% if this.theme.fonts_googlefonts %}
+<link href="https://fonts.googleapis.com/css?family={{ this.theme.fonts_google_fontfamily }}" rel="stylesheet">
+{% endif %}
+{% if this.theme.fonts_fontawesome %}
+<link href="{{ 'assets/vendor/font-awesome/css/font-awesome.min.css'|theme }}" rel="stylesheet">
+{% endif %}
+
+<link rel="stylesheet" href="{{'assets/web/assets/mobirise-icons/mobirise-icons.css'|theme}}">
+<link rel="stylesheet" href="{{'assets/tether/tether.min.css'|theme}}">
+<link rel="stylesheet" href="{{'assets/bootstrap/css/bootstrap.min.css'|theme}}">
+<link rel="stylesheet" href="{{'assets/bootstrap/css/bootstrap-grid.min.css'|theme}}">
+<link rel="stylesheet" href="{{'assets/bootstrap/css/bootstrap-reboot.min.css'|theme}}">
+<link rel="stylesheet" href="{{'assets/dropdown/css/style.css'|theme}}">
+<link rel="stylesheet" href="{{'assets/as-pie-progress/css/progress.min.css'|theme}}">
+<link rel="stylesheet" href="{{'assets/socicon/css/styles.css'|theme}}">
+<link rel="stylesheet" href="{{'assets/datatables/data-tables.bootstrap4.min.css'|theme}}">
+<link rel="stylesheet" href="{{'assets/style.css'|theme}}">
+<link rel="stylesheet" href="{{'assets/slick.css'|theme}}">
+<link rel="stylesheet" href="{{'assets/theme/css/style.css'|theme}}">
+<link rel="stylesheet" href="{{'assets/gallery/style.css'|theme}}">
+<link rel="stylesheet" href="{{'assets/mobirise/css/mbr-additional.css'|theme}}" type="text/css">

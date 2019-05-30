@@ -1,0 +1,45 @@
+[viewBag]
+==
+<section class="header7 cid-rpoGpFqpI8" id="intro-{{data.block_layout}}">
+
+    <div class="container">
+        <div class="media-container-row">
+
+            <div class="media-content align-right">
+                <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-1">
+                    {{data.title}}
+                </h1>
+                <div class="mbr-section-text mbr-white pb-3">
+                    <p class="mbr-text mbr-fonts-style display-5">
+                       {{data.subtitle}}
+                    </p>
+                </div>
+                <div class="mbr-section-btn">
+                    {% for item in data.button_left %}    
+                        <a class="btn btn-md {{item.color}} display-4 {{item.on_off == 1 ? 'd-none' : ''}}" href="{{item.url}}">{{item.text}}</a>
+                    {% endfor %}     
+                    {% for item in data.button_right %}    
+                        <a class="btn btn-md {{item.color}} display-4 {{item.on_off == 1 ? 'd-none' : ''}}" href="{{item.url}}">{{item.text}}</a>
+                    {% endfor %}    
+                </div>
+            </div>
+
+            <div class="mbr-figure" style="width: 100%;"><iframe class="mbr-embedded-video" src="{{data.url_youtube_intro11}}" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
+
+        </div>
+    </div>
+</section>
+
+
+<style>
+#intro-{{data.block_layout}}{
+        background: linear-gradient(45deg, #55b4d4, {{data.linear_gradient_intro11}})!important;     
+    }
+#intro-{{data.block_layout}} h1, #intro-{{data.block_layout}} p{
+        color: {{data.text_color}};
+    } 
+#intro-{{data.block_layout}}{
+        padding-top: {{data.height}}!important;
+        padding-bottom: {{data.height}}!important;    
+    }            
+</style>

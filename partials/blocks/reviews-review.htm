@@ -1,0 +1,63 @@
+[viewBag]
+==
+<section class="testimonials1 cid-rpoIOGmRFT" id="testimonials-{{data.block_layout}}">
+    
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 align-center">
+                <h2 class="pb-3 mbr-fonts-style display-2">
+                    {{data.title}}
+                </h2>
+                <h3 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-5">
+                    {{data.description}}
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-3 mt-2">
+        <div class="media-container-row">
+        {% for item in data.add_item %}
+            <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4">
+                <div class="panel-item p-3">
+                    <div class="card-block">
+                        <div class="testimonial-photo">
+                            <img src="{{item.image|media}}">
+                        </div>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                           {{item.description}}
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="mbr-author-name mbr-bold mbr-fonts-style display-7">
+                             {{item.text}}
+                        </div>
+                        <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-7">
+                               {{item.text1}}
+                        </small>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+        </div>
+    </div>   
+</section>
+
+
+
+
+
+
+<style>
+#testimonials-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#testimonials-{{data.block_layout}} h5, #testimonials-{{data.block_layout}} p, #testimonials-{{data.block_layout}} h3, #testimonials-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#testimonials-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

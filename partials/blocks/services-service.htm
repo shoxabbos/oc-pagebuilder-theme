@@ -1,0 +1,57 @@
+[viewBag]
+==
+<section class="services1 cid-rpoH2uMwNd" id="services-{{data.block_layout}}">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <!--Titles-->
+            <div class="title pb-5 col-12">
+                <h2 class="align-left pb-3 mbr-fonts-style display-1">
+                    {{data.title_service}}
+                </h2>
+                
+            </div>
+            {% for item in data.add_card_w %}
+            <div class="card col-12 col-md col-lg">
+                <div class="card-wrapper p-3">
+                    <div class="card-img">
+                        <img src="{{item.image|media}}" alt="ITmaker">
+                    </div>
+                    <div class="card-box pb-md-5">
+                        <h4 class="card-title mbr-fonts-style display-5">
+                            {{item.title}}
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            {{item.description}}
+                        </p>
+                        <!--Btn-->
+                        <div class="mbr-section-btn align-left">
+                            <a href="{{item.url_button}}" class="btn {{item.color_button}} display-4">
+                                {{item.text_button}}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<style>
+#services-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#services-{{data.block_layout}} h4, #services-{{data.block_layout}} p, #services-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#services-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

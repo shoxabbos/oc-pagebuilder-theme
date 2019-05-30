@@ -1,0 +1,52 @@
+[viewBag]
+==
+<section class="step2 cid-rpoHjATXvf" id="step-{{data.block_layout}}">
+
+    <div class="container">
+        <h2 class="mbr-section-title pb-3 mbr-fonts-style align-center display-2">
+            {{data.title}}
+        </h2>
+        <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style align-center display-5">
+            {{data.description}}
+        </h3>
+        <div class="step-container row justify-content-center">
+        
+        {% for key, item in data.add_item_w2 %}
+            <div class="card col-12 col-md-4 separline">
+                <div class="step-element">
+                    <div class="step-wrapper pb-3">
+                        <h3 class="step d-flex align-items-center justify-content-center m-auto">
+                            {{key}}
+                        </h3>
+                    </div>          
+                    <div class="step-text-content align-center">
+                        <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">
+                            {{item.title}}
+                        </h4>
+                        <p class="mbr-step-text mbr-fonts-style display-7">
+                            {{item.description}}    
+                        </p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}    
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<style>
+#step-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#step-{{data.block_layout}} h4, #step-{{data.block_layout}} p, #step-{{data.block_layout}} h3, #step-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#step-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

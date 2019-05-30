@@ -1,0 +1,50 @@
+[viewBag]
+==
+<section class="mbr-section form3 cid-rpoHxFsaxe" id="form-{{data.block_layout}}">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-12 col-lg-8">
+                <h2 class="align-center pb-2 mbr-fonts-style display-2">
+                    {{data.title_w}}
+                </h2>
+                <h3 class="mbr-section-subtitle align-center pb-5 mbr-light mbr-fonts-style display-5">
+                    {{data.description_w}}
+                </h3>
+            </div>
+        </div>
+
+        <div class="row py-2 justify-content-center">
+            <div class="col-12 col-lg-6  col-md-8 " data-form-type="formoid">
+                <div data-form-alert="" hidden="">
+                        {{"Спасибо за заполнение анкеты!"|_}}
+                </div>
+                <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="fFS8HlLMD3KPxzFAhuc1U8XzYw06nXeNaqn9gS3WEJ04tqMgtkkiYxokUjU8gl6c+5rQeIpl0bxhq9yCUPfVbMGdRSABM0Wbc2f1ZwbPxt/ml5cqp64sXaFCb88UETGz">
+                    <div class="mbr-subscribe input-group">
+                        <input class="form-control {{data.on_off_email == 1 ? 'd-none' : ''}}" type="email" name="email" placeholder="Email" data-form-field="Email" required="" id="email-form3-2s">
+                        <span class="input-group-btn">
+                            <button href="" type="submit" class="btn {{data.color}} display-4">{{"ПОДПИСАТЬСЯ"|_}}</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<style>
+#form-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#form-{{data.block_layout}} h4, #form-{{data.block_layout}} p, #form-{{data.block_layout}} h3, #form-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#form-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

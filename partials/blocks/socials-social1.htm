@@ -1,0 +1,39 @@
+[viewBag]
+==
+<section class="cid-rpoHNCpPHp" id="social-{{data.block_layout}}">
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-md-8 align-center">
+                <h2 class="pb-3 mbr-fonts-style display-2">
+                    {{data.title}}
+                </h2>
+                <div class="social-list pl-0 mb-0">
+                {% for item in data.icon_w %}    
+                    <a href="{{item.url}}" target="_blank">
+                        <span class="px-2 {{item.icon}}"></span>
+                    </a>
+                {% endfor %}    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<style>
+#social-{{data.block_layout}}{
+        background: linear-gradient(0deg, #7fdbfd, {{data.background_color}})!important;
+    }
+#social-{{data.block_layout}} h5, #social-{{data.block_layout}} p, #social-{{data.block_layout}} h3, #social-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#social-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

@@ -1,0 +1,48 @@
+[viewBag]
+==
+<section class="features5 cid-rpoGTRhYGG" id="features-{{data.block_layout}}">
+ 
+    <div class="container">
+        <div class="media-container-row">
+        {% for item in data.add_card_s5 %}
+            <div class="card p-3 col-12 col-md col-lg">
+                <div class="color p-4">
+                    <div class="card-img pb-3">
+                        <span class="{{item.icon}}" style="color: {{item.color_icon}};!ipmortant"></span>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title py-3 mbr-fonts-style display-7">
+                            {{item.title}}
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                           {{item.description}} <a href="{{item.url}}">{{"Подробнее..."|_}}</a>
+                        </p>
+                    </div>
+                </div>    
+            </div>
+        {% endfor %}    
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<style>
+#features-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#features-{{data.block_layout}} .color{
+        background-color: {{data.background_card_a3}}!important;        
+    }    
+#features-{{data.block_layout}} h4, #features-{{data.block_layout}} p{    
+        color: {{data.text_color}}!important;
+    }      
+#features-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

@@ -1,0 +1,67 @@
+[viewBag]
+==
+<section class="clients cid-rpoIZmggNt" id="clients-{{data.block_layout}}">
+
+        <div class="container mb-5">
+            <div class="media-container-row">
+                <div class="col-12 align-center">
+                    <h2 class="mbr-section-title pb-3 mbr-fonts-style display-2">
+                        {{data.title}}
+                    </h2>
+                    <h3 class="mbr-section-subtitle mbr-light mbr-fonts-style display-5">
+                        {{data.description}}
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="carousel slide" data-ride="carousel" role="listbox">
+            
+            <div class="carousel-inner" data-visible="5">
+            
+            {% for item in data.add_item %}    
+                <div class="carousel-item ">
+                    <div class="media-container-row">
+                        <div class="col-md-12">
+                            <div class="wrap-img ">
+                                <img src="{{item.image|media}}" class="img-responsive clients-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}    
+            
+            </div>
+            
+            
+            <div class="carousel-controls">
+                <a data-app-prevent-settings="" class="carousel-control carousel-control-prev" role="button" data-slide="prev">
+                    <span aria-hidden="true" class="mbri-left mbr-iconfont"></span>
+                    <span class="sr-only">Назад</span>
+                </a>
+                <a data-app-prevent-settings="" class="carousel-control carousel-control-next" role="button" data-slide="next">
+                    <span aria-hidden="true" class="mbri-right mbr-iconfont"></span>
+                    <span class="sr-only">Вперед</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<style>
+#clients-{{data.block_layout}}{
+        background: linear-gradient({{data.background_color}}, #efefef)!important;
+    }
+#clients-{{data.block_layout}} h5, #clients-{{data.block_layout}} p, #clients-{{data.block_layout}} h3, #clients-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#clients-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

@@ -1,0 +1,37 @@
+[viewBag]
+==
+<section class="mbr-section info4 cid-rpoHvdx1vs" data-bg-video="{{data.url_video}}" id="info-{{data.block_layout}}">
+
+    <div class="container">
+        <div class="justify-content-center row">
+            <div class="media-container-column title col-12 col-md-10">
+                <h2 class="align-right mbr-bold mbr-white pb-3 mbr-fonts-style display-2">
+                    {{data.title}}
+                </h2>
+                <h3 class="mbr-section-subtitle align-right mbr-light mbr-white pb-3 mbr-fonts-style display-5">
+                    {{data.description}}
+                </h3>                
+                <div class="mbr-section-btn align-right py-4">
+                {% for item in data.add_button %}
+                    <a class="btn {{item.color}} display-4" href="{{item.url}}">{{item.text}}</a>
+                {% endfor %}                        
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<style>
+
+#info-{{data.block_layout}} h4, #info-{{data.block_layout}} p, #info-{{data.block_layout}} h3, #info-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#info-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

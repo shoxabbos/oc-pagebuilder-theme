@@ -1,0 +1,57 @@
+[viewBag]
+==
+<section class="counters1 counters cid-rpoGsESocF" id="counters-{{data.block_layout}}">
+
+    <div class="container">
+        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2 title">
+            {{data.title}}
+        </h2>
+        <h3 class="mbr-section-subtitle mbr-fonts-style display-5 content">
+            {{data.content}}
+        </h3>
+
+        <div class="container pt-4 mt-2">
+            <div class="media-container-row">
+               {% for item in data.cards %}
+                    <div class="card p-3 align-center col-12 col-md-6 col-lg-4">
+                        <div class="panel-item p-3" style="background-color: {{item.card_background}}!important;">
+                            <div class="card-img pb-3">
+                                <span class="{{item.icon}}"></span>
+                            </div>
+    
+                            <div class="card-text">
+                                <h3 class="count pt-3 pb-3 mbr-fonts-style display-2 title">
+                                      {{item.title}}
+                                </h3>
+                                <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7 title">
+                                    {{item.subtitle}}
+                                </h4>
+                                <p class="mbr-content-text mbr-fonts-style display-7 content">
+                                    {{item.content}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}    
+                
+            </div>
+        </div>
+   </div>
+</section>
+
+
+
+<style>
+#counters-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important; 
+    }
+#counters-{{data.block_layout}} .title{
+        color: {{data.title_color}};
+    }  
+#counters-{{data.block_layout}} .content{    
+        color: {{data.description_color}};
+    }
+#counters-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+    }             
+</style>

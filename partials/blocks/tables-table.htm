@@ -1,0 +1,62 @@
+[viewBag]
+==
+<section class="section-table cid-rpoJ2PLM2W" id="table-{{data.block_layout}}">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-2">
+          {{data.title}}
+      </h2>
+      <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5">
+            {{data.description}}
+      </h3>
+      
+      <div class="table-wrapper">
+        
+
+        <div class="container scroll mt-5">
+          <table class="table isSearch" cellspacing="0">
+            {{data.table|raw}}
+          </table>
+        </div>
+        
+        <div class="container table-info-container">
+          <div class="row info">
+            <div class="col-md-6">
+              <div class="dataTables_info mbr-fonts-style display-7">
+                <span class="infoBefore">Отражено</span>
+                <span class="inactive infoRows"></span>
+                <span class="infoAfter">записи</span>
+                <span class="infoFilteredBefore">(фильтр на</span>
+                <span class="inactive infoRows"></span>
+                <span class="infoFilteredAfter"> записи)</span>
+              </div>
+            </div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+<style>
+#table-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#table-{{data.block_layout}} table{
+        background-color: #fff !important;        
+    }    
+#table-{{data.block_layout}} td{
+        padding: 10px;
+    }    
+#table-{{data.block_layout}} h5, #table-{{data.block_layout}} p, #table-{{data.block_layout}} h3, #table-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#table-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

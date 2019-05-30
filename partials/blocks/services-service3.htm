@@ -1,0 +1,72 @@
+[viewBag]
+==
+<section class="services4 cid-rpoH55J4EI" id="services-{{data.block_layout}}">
+    
+    <div class="container">
+        <div class="row">
+            
+        {% for item in data.add_card_w3 %}
+            <div class="card p-3 col-12">
+                <div class="card-wrapper media-container-row media-container-row">
+                    <div class="card-box">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-4">
+                                <div class="wrapper">
+                                    <!--Image-->
+                                    <div class="mbr-figure" style="width: 100%;">
+                                        <img src="{{item.image|media}}" alt="ITmaker">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7 col-lg-4">
+                                <div class="wrapper col-left">
+                                    <!--Title-->
+                                    <h4 class="card-title mbr-fonts-style display-5">
+                                        {{item.title}}
+                                    </h4>
+                                    <!--Subtitle-->
+                                    <p class="mbr-text mbr-fonts-style pt-3 display-7">
+                                        {{item.description}}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 col-lg-4">
+                                <div class="wrapper border_wrapper">
+                                    <!--Cost-->
+                                    <p class="mbr-text mbr-fonts-style col-right mbr-black align-center display-2">
+                                        {{item.price}}
+                                    </p>
+                                    <!--Btn-->
+                                    <div class="mbr-section-btn col-right align-center">
+                                        <a href="{{item.url_button}}" class="btn {{item.color_button}} m-0 display-4">
+                                            {{"Buy Now"|_}}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}    
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<style>
+#services-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#services-{{data.block_layout}} h4, #services-{{data.block_layout}} p, #services-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#services-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

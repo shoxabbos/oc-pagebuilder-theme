@@ -1,0 +1,50 @@
+[viewBag]
+==
+<section class="carousel slide cid-rpoGB8uukB {{data.block_layout}}" data-interval="false" id="slider2-x">
+
+    
+    <div class="container content-slider">
+        <div class="content-slider-wrap">
+            <div>
+            <div class="mbr-slider slide carousel" data-pause="true" data-keyboard="false" data-ride="false" data-interval="false">
+            <ol class="carousel-indicators">
+            
+            {% for key, item in data.slider_item_w %}    		    
+                <li data-app-prevent-settings="" data-target="#slider2-x" class="{{ key == 1 ? 'active' : ''}}" data-slide-to="0"></li>
+            {% endfor %}    
+            
+            </ol>
+            <div class="carousel-inner" role="listbox">
+            
+            {% for key, item in data.slider_item_w %}
+                <div class="carousel-item slider-fullscreen-image {{ key == 1 ? 'active' : ''}}" data-bg-video-slide="false" style="background-image: url({{item.image|media}});">
+                    <div class="container container-slide">
+                        <div class="image_wrapper">
+                            <div class="mbr-overlay"></div>
+                            <img src="{{item.image|media}}">
+                            <div class="carousel-caption justify-content-center">
+                                <div class="col-10 align-center">
+                                    <p class="lead mbr-text mbr-fonts-style display-7">{{item.description}}.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            
+            <a data-app-prevent-settings="" class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#slider2-x"><span aria-hidden="true" class="mbri-left mbr-iconfont"></span><span class="sr-only">Previous</span></a><a data-app-prevent-settings="" class="carousel-control carousel-control-next" role="button" data-slide="next" href="#slider2-x"><span aria-hidden="true" class="mbri-right mbr-iconfont"></span><span class="sr-only">Next</span></a></div></div> 
+        </div>
+    </div>
+</section>
+
+
+
+<style>
+.{{data.block_layout}}{
+        background-color: {{data.background_color}}!important; 
+    } 
+.{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

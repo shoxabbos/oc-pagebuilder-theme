@@ -1,0 +1,5246 @@
+menu:
+    name: Header Menu
+    description: Header Menu
+    icon: icon-ellipsis-h
+    fields:
+        section_menu_section:
+            label: Header Menu
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel' 
+        _menu_block_b:
+            tab: Menu Block
+            type: section
+            span: right
+            label: Menu Block A
+            comment: <img src="/storage/app/media/dropdown-images/menu.png" class="img-responsive" />
+            commentHtml: true 
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[menu]
+        _menu_block_b1:
+            tab: Menu Block
+            type: section
+            span: right
+            label: Menu Block A1
+            comment: <img src="/storage/app/media/dropdown-images/menu1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[menu1]
+        block_layout:
+            tab: Menu Block
+            label: Block page 
+            type: dropdown
+            span: left
+            default: 'menu'
+            options:
+                menu: Menu
+                menu1: Menu1     
+        text_color:
+            label: Color text
+            type: colorpicker
+            availableColors: ["#ffffff", "#000000"]
+            default: "#ffffff"
+            span: left                   
+        bg_gradient_w:
+            label: Linear-Gradient
+            type: colorpicker
+            availableColors: ["#ffffff", "#000000","#009fff","#ff46e4"]
+            default: "#149dcc"
+            span: left 
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[menu]                
+        bg_gradient_right_w:
+            label: Linear-Gradient
+            type: colorpicker
+            availableColors: ["#ffffff", "#000000","#009fff","#ff46e4"]
+            default: "#ff46e4"
+            span: right 
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[menu]
+        bg_gradient:
+            label: Linear-Gradient
+            type: colorpicker
+            availableColors: ["#ffffff", "#000000","#009fff","#ff46e4"]
+            default: "#149dcc"
+            span: left 
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[menu1]                
+        bg_gradient_right:
+            label: Linear-Gradient
+            type: colorpicker
+            availableColors: ["#ffffff", "#000000","#009fff","#ff46e4"]
+            default: "#ff46e4"
+            span: right 
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[menu1]              
+        logo:
+            label: Logo
+            mode: file
+            span: full
+            type: repeater
+            form: 
+                fields:
+                    name:
+                        label: Name
+                        span: auto
+                        type: text
+                    url:
+                        label: 'URL'
+                        span: auto
+                        type: text    
+                    image:                        
+                        span: auto
+                        mode: image
+                        type: mediafinder                                        
+        button:
+            label: Button
+            span: full
+            type: repeater
+            form: 
+                fields:
+                    text:      
+                        label: Text                  
+                        span: auto                        
+                        type: text
+                    url:
+                        label: 'URL'
+                        span: auto
+                        type: text 
+                    color:
+                        label: Color button
+                        type: balloon-selector                                     
+                        options:            
+                            btn-success: Success                                 
+                            btn-primary: Primary                
+                            btn-info: Info
+                            btn-warning: Warning
+                            btn-dark: Dark
+                            btn-danger: Danger
+                        span: auto 
+                    icon_url:
+                        label: Icon URL
+                        span: auto
+                        type: text     
+                    on_off:
+                        label: (on-off)
+                        span: auto
+                        type: switch       
+intro: 
+    name: Intros
+    description: Intro pages
+    icon: icon-bookmark-o
+    fields:
+        section_intro_section:
+            label: Intro Pages
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel' 
+        _intro_block_v:
+            tab: Intro Block
+            type: section
+            span: right
+            label: Intro Block 
+            comment: <img src="/storage/app/media/dropdown-images/Intro/intro.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro]
+        _intro_block_v1:
+            tab: Intro Block
+            type: section
+            span: right
+            label: Intro Block 
+            comment: <img src="/storage/app/media/dropdown-images/Intro/intro1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro1]
+
+        _intro_block_v2:
+            tab: Intro Block
+            type: section
+            span: right
+            label: Intro Block 
+            comment: <img src="/storage/app/media/dropdown-images/Intro/intro2.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro2] 
+        _intro_block_v3:
+            tab: Intro Block
+            type: section
+            span: right
+            label: Intro Block 
+            comment: <img src="/storage/app/media/dropdown-images/Intro/intro3.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro3]                       
+        _intro_block_v4:
+            tab: Intro Block
+            type: section
+            span: right
+            label: Intro Block 
+            comment: <img src="/storage/app/media/dropdown-images/Intro/intro4.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro4]
+        _intro_block_v5:
+            tab: Intro Block
+            type: section
+            span: right
+            label: Intro Block 
+            comment: <img src="/storage/app/media/dropdown-images/Intro/intro5.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro5] 
+        _intro_block_v6:
+            tab: Intro Block
+            type: section
+            span: right
+            label: Intro Block 
+            comment: <img src="/storage/app/media/dropdown-images/Intro/intro6.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro6]
+        _intro_block_v7:
+            tab: Intro Block
+            type: section
+            span: right
+            label: Intro Block 
+            comment: <img src="/storage/app/media/dropdown-images/Intro/intro7.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro7] 
+        _intro_block_v8:
+            tab: Intro Block
+            type: section
+            span: right
+            label: Intro Block 
+            comment: <img src="/storage/app/media/dropdown-images/Intro/intro8.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro8] 
+        _intro_block_v9:
+            tab: Intro Block
+            type: section
+            span: right
+            label: Intro Block 
+            comment: <img src="/storage/app/media/dropdown-images/Intro/intro9.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro9] 
+        _intro_block_v10:
+            tab: Intro Block
+            type: section
+            span: right
+            label: Intro Block 
+            comment: <img src="/storage/app/media/dropdown-images/Intro/intro10.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro10]
+        _intro_block_v11:
+            tab: Intro Block
+            type: section
+            span: right
+            label: Intro Block 
+            comment: <img src="/storage/app/media/dropdown-images/Intro/intro11.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro11]
+        _intro_block_v12:
+            tab: Intro Block
+            type: section
+            span: right
+            label: Intro Block 
+            comment: <img src="/storage/app/media/dropdown-images/Intro/intro12.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro12]                                                                                               
+        block_layout:
+            tab: Intro Block
+            label: Block page 
+            type: dropdown
+            span: left
+            default: 'intro'
+            options:
+                intro: Intro
+                intro1: Intro1
+                intro2: Intro2    
+                intro3: Intro3 
+                intro4: Intro4      
+                intro5: Intro5 
+                intro6: Intro6
+                intro7: Intro7    
+                intro8: Intro8
+                intro9: Intro9 
+                intro10: Intro10
+                intro11: Intro11
+                intro12: Intro12 
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two                                     
+        text_color:
+            label: Color text
+            type: colorpicker
+            availableColors: ["#fe3636","#ff663f","#3f21ff","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left  
+        background_color_intro1:
+            label: Background color 
+            type: colorpicker
+            availableColors: ["#ffffff","#fe3636","#f289f2","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left      
+            commentHtml: true   
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro1]
+        url_youtube_intro4:
+            label: URL Background Vidoe
+            span: left
+            type: text
+            defoult: 'https://www.youtube.com/watch?v=36YgDDJ7XSc'
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro4] 
+        background_image_intro7:
+            label: Background image
+            type: mediafinder
+            mode: image
+            span: left                        
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro7] 
+        background_image_intro8:
+            label: Background image
+            type: mediafinder
+            mode: image
+            span: left                        
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro8] 
+        linear_gradient_intro12:
+            label: Background Linear-Gradient 
+            type: colorpicker
+            availableColors: ["#55b4d4","#56eeff","#fcaffc","#ffa891","#8673ff","#000000"]
+            default: "#55b4d4"
+            span: left
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro12]                                                                    
+        title:    
+            label: Title
+            span: full
+            type: text 
+        subtitle:
+            label: Subtitle
+            span: full
+            type: text                
+        content:
+            label: Content
+            type: textarea
+            size: small
+            span: full            
+        button_left:
+            label: Button left      
+            prompt: 'Add new item'
+            span: left
+            type: repeater
+            form: 
+                fields:
+                    text:
+                        label: 'Text'
+                        span: left
+                        type: text
+                        defoult: LEARN MORE
+                    url:
+                        label: 'URL'
+                        span: right
+                        type: text    
+                    color:
+                        label: Color
+                        type: balloon-selector  
+                        defoult: btn-success           
+                        options:            
+                            btn-success: Success                                 
+                            btn-primary: Primary                
+                            btn-info: Info
+                            btn-warning: Warning
+                            btn-dark: Dark
+                            btn-danger: Danger
+                        span: left    
+                    on_off:
+                        label: Button (on-off)
+                        span: right
+                        type: switch                                        
+        button_right:
+            label: Button right
+            prompt: 'Add new item'
+            span: right
+            type: repeater
+            form: 
+                fields:
+                    text:
+                        label: 'Text'
+                        span: left
+                        type: text
+                        defoult: LIVE DEMO
+                    url:
+                        label: 'URL'
+                        span: right
+                        type: text    
+                    color:
+                        label: Color
+                        type: balloon-selector   
+                        defoult: btn-white-outline         
+                        options:            
+                            btn-white-outline: White     
+                            btn-success-outline: Success                                 
+                            btn-primary-outline: Primary                
+                            btn-info-outline: Info
+                            btn-warning-outline: Warning
+                            btn-dark-outline: Dark
+                            btn-danger-outline: Danger
+                        span: left    
+                    on_off:
+                        label: Button (on-off)
+                        span: right
+                        type: switch                                             
+        background_image_intro:
+            label: Background image
+            type: mediafinder
+            mode: image
+            span: left       
+            defoult: /storage/app/media/background-image/background1.jpg     
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro]                                                                                                                                               
+        background_image_intro2:
+            label: Background image
+            type: mediafinder
+            mode: image
+            span: right                        
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro2]                             
+        background_image_intro3:
+            label: Background image
+            type: mediafinder
+            mode: image
+            span: left                        
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro3]              
+        image_intro3:
+            label: Image
+            type: mediafinder
+            mode: image
+            span: right 
+            defoult: /storage/app/media/background-image/background2.jpg                       
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro3]                   
+        background_image_intro5:
+            label: Background image
+            type: mediafinder
+            mode: image
+            span: left                        
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro5]                 
+        background_image_intro6:
+            label: Background image
+            type: mediafinder
+            mode: image
+            span: left                        
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro6]  
+        color_block_intro6:
+            label: Color Block
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+            default: "#4f4943"
+            span: right
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro6]                  
+        columns_intro7:
+            label: Columns
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form: 
+                fields:
+                    text:
+                        label: 'Text'
+                        span: left
+                        type: text
+                        defoult: Разнообразное оформление                     
+                    icon:
+                        label: 'Icon'
+                        span: right
+                        type: text
+                        defoult: mbri-layers mbr-iconfont
+                    url:
+                        label: 'URL'
+                        span: left
+                        type: text    
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro7]                   
+        icon_intro8:
+            label: Icon
+            prompt: 'Add new item'
+            span: right
+            type: repeater
+            form: 
+                fields:                    
+                    url:
+                        label: 'URL'
+                        span: left
+                        type: text                        
+                    on_off:
+                        label: (on-off)
+                        span: right
+                        type: switch
+                    color:
+                        label: Color    
+                        type: colorpicker
+                        availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+                        default: "#4f4943"
+                        span: auto      
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro8]                                                  
+        background_image_intro9:
+            label: Background image
+            type: mediafinder
+            mode: image
+            span: right                        
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro9]         
+        on_off_massage_intro9:
+            label: Massage (on-off)            
+            default: false                                                
+            span: left
+            type: switch
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro9]
+        image_intro10:
+            label: Image
+            type: mediafinder
+            mode: image
+            span: left                        
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro10]                                              
+        background_image_intro10:
+            label: Background image
+            type: mediafinder
+            mode: image
+            span: right                        
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro10]                          
+        linear_gradient_intro11:
+            label: Background Linear-Gradient 
+            type: colorpicker
+            availableColors: ["#0f7699","#56eeff","#fcaffc","#ffa891","#8673ff","#000000"]
+            default: "#0f7699"
+            span: left
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro11] 
+        url_youtube_intro11:
+            label: URL Youtube
+            span: right
+            type: text
+            defoult: https://www.youtube.com/watch?v=36YgDDJ7XSc
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[intro11]                    
+images: 
+    name: Images
+    description: Image pages
+    icon: icon-picture-o
+    fields:
+        _image_block_c:
+            tab: Image Block
+            type: section
+            span: right
+            label: Image Block 
+            comment: <img src="/storage/app/media/dropdown-images/Image_blocks/image.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[image] 
+        block_layout: 
+            tab: Image Block
+            label: Block page 
+            type: dropdown
+            span: left
+            default: 'image'
+            options:
+                image: Image   
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left  
+        image:
+            label: Image
+            type: mediafinder
+            mode: image
+            span: left  
+        title:      
+            label: Title
+            span: full
+            type: text                                                          
+videos: 
+    name: Videos
+    description: Video pages
+    icon: icon-caret-square-o-right
+    fields:
+        _video_block_c:
+            tab: Video Block
+            type: section
+            span: right
+            label: Video Block 
+            comment: <img src="/storage/app/media/dropdown-images/video-screen.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[video] 
+        block_layout: 
+            tab: Video Block
+            label: Block page 
+            type: dropdown
+            span: left
+            default: 'fullscreen'
+            options:
+                video: Video 
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: right 
+        url:      
+            label: Video URL
+            span: left
+            type: text                        
+sliders: 
+    name: Sliders
+    description: Slider pages
+    icon: icon-exchange
+    fields:
+        _slider_block_c:
+            tab: Slider Block
+            type: section
+            span: right
+            label: Slider Block 
+            comment: <img src="/storage/app/media/dropdown-images/Slider/slider-screen.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[slider]
+        _slider_block_c1:
+            tab: Slider Block
+            type: section
+            span: right
+            label: Slider Block 
+            comment: <img src="/storage/app/media/dropdown-images/Slider/slider2-screen.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[slider1]                                    
+        block_layout: 
+            tab: Slider Block
+            label: Block page 
+            type: dropdown
+            span: left
+            default: 'slider'
+            options:
+                slider: Slider
+                slider1: Slider1
+        slider_item:
+            label: Add Slider            
+            span: full
+            type: repeater
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[slider]   
+            form: 
+                fields:                                         
+                    title:      
+                        label: Title
+                        span: left
+                        type: text        
+                    description:      
+                        label: Content
+                        span: right
+                        type: text
+                    add_content:
+                        label: Add content            
+                        span: full
+                        type: repeater
+                        form:
+                            fields:                                              
+                                on_off_left:
+                                    label: (on-off) Left
+                                    span: left
+                                    type: switch
+                                on_off_right:
+                                    label: (on-off) Right
+                                    span: right
+                                    type: switch                                 
+                                button_left:      
+                                    label: Button text
+                                    span: left
+                                    type: text                
+                                button_right:      
+                                    label: Button text
+                                    span: right
+                                    type: text 
+                                url_left:      
+                                    label: URL Left
+                                    span: left
+                                    type: text       
+                                url_right:      
+                                    label: URL Right
+                                    span: right
+                                    type: text               
+                                color_button_left:
+                                    label: Color Button Left
+                                    type: balloon-selector            
+                                    options:            
+                                        btn-white: White     
+                                        btn-success: Success                                 
+                                        btn-primary: Primary                
+                                        btn-info: Info
+                                        btn-warning: Warning
+                                        btn-dark: Dark
+                                        btn-danger: Danger
+                                    span: left                     
+                                color_button_right:
+                                    label: Color Button Right
+                                    type: balloon-selector            
+                                    options:            
+                                        btn-white-outline: White     
+                                        btn-success-outline: Success                                 
+                                        btn-primary-outline: Primary                
+                                        btn-info-outline: Info
+                                        btn-warning-outline: Warning
+                                        btn-dark-outline: Dark
+                                        btn-danger-outline: Danger
+                                    span: right                                                      
+                    image:     
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: left      
+                    locations:
+                        label: Left-Center-Right
+                        span: right
+                        type: balloon-selector 
+                        options:            
+                            text-left: Left     
+                            text-center: Center                                 
+                            text-right: Right
+        
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left 
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[slider1]                 
+        slider_item_w:
+            label: Add Slider            
+            span: full
+            type: repeater
+            form: 
+                fields: 
+                    image:     
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: left 
+                    on_off_text:
+                        label: (on-off) Text
+                        span: right
+                        type: switch                                 
+                    description:      
+                        label: Description
+                        span: right
+                        type: text   
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[slider1]
+gallerys: 
+    name: Galleries
+    description: Gallery pages
+    icon: icon-map
+    fields:
+        _gallery_block_c:
+            tab: Gallery Block
+            type: section
+            span: right
+            label: Gallery Block 
+            comment: <img src="/storage/app/media/dropdown-images/Gallery/gallery.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[gallery]
+        _gallery_block_c1:
+            tab: Gallery Block
+            type: section
+            span: right
+            label: Gallery Block 
+            comment: <img src="/storage/app/media/dropdown-images/Gallery/gallery3.png" class="img-responsive" />            
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[gallery1] 
+        _gallery_block_c2:
+            tab: Gallery Block
+            type: section
+            span: right
+            label: Gallery Block 
+            comment: <img src="/storage/app/media/dropdown-images/Gallery/gallery1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[gallery2]    
+        _gallery_block_c3:
+            tab: Gallery Block
+            type: section
+            span: right
+            label: Gallery Block 
+            comment: <img src="/storage/app/media/dropdown-images/Gallery/gallery2.png" class="img-responsive" />            
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[gallery3]                         
+        block_layout: 
+            tab: Gallery Block
+            label: Block page 
+            type: dropdown
+            span: left
+            default: 'gallery'
+            options:
+                gallery: Gallery
+                gallery1: Gallery1 
+                gallery2: Gallery2 
+                gallery3: Gallery3  
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two                                         
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left
+        color_button:
+            label: Color Button
+            type: balloon-selector            
+            options:            
+                btn-white-outline: White     
+                btn-success-outline: Success                                 
+                btn-primary-outline: Primary                
+                btn-info-outline: Info
+                btn-warning-outline: Warning
+                btn-dark-outline: Dark
+                btn-danger-outline: Danger
+            span: left  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[gallery]
+        color_button_a:
+            label: Color Button
+            type: balloon-selector            
+            options:            
+                btn-white-outline: White     
+                btn-success-outline: Success                                 
+                btn-primary-outline: Primary                
+                btn-info-outline: Info
+                btn-warning-outline: Warning
+                btn-dark-outline: Dark
+                btn-danger-outline: Danger
+            span: left  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[gallery3]                
+        image:
+            label: Add Image            
+            span: full
+            type: repeater
+            form: 
+                fields:                    
+                    image:     
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: left 
+                    filter:      
+                        label: Filter
+                        span: right
+                        type: text                 
+articles:   
+    name: Articles
+    description: Article pages
+    icon: icon-align-center
+    fields:
+        _article_block_c:
+            tab: Article Block
+            type: section
+            span: right
+            label: Article Block 
+            comment: <img src="/storage/app/media/dropdown-images/Articles/article.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[article]
+        _article_block_c1:
+            tab: Article Block
+            type: section
+            span: right
+            label: Article Block 
+            comment: <img src="/storage/app/media/dropdown-images/Articles/article1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[article1] 
+        _article_block_c2:
+            tab: Article Block
+            type: section
+            span: right
+            label: Article Block 
+            comment: <img src="/storage/app/media/dropdown-images/Articles/article2.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[article2] 
+        _article_block_c3:
+            tab: Article Block
+            type: section
+            span: right
+            label: Article Block 
+            comment: <img src="/storage/app/media/dropdown-images/Articles/article3.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[article3] 
+        _article_block_c4:
+            tab: Article Block
+            type: section
+            span: right
+            label: Article Block 
+            comment: <img src="/storage/app/media/dropdown-images/Articles/article4.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[article4]
+        _article_block_c5:
+            tab: Article Block
+            type: section
+            span: right
+            label: Article Block 
+            comment: <img src="/storage/app/media/dropdown-images/Articles/article5.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[article5] 
+        _article_block_c6:
+            tab: Article Block
+            type: section
+            span: right
+            label: Article Block 
+            comment: <img src="/storage/app/media/dropdown-images/Articles/article6.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[article6]
+        _article_block_c7:
+            tab: Article Block
+            type: section
+            span: right
+            label: Article Block 
+            comment: <img src="/storage/app/media/dropdown-images/Articles/article7.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[article7]                                                         
+        _article_block_c8:
+            tab: Article Block
+            type: section
+            span: right
+            label: Article Block 
+            comment: <img src="/storage/app/media/dropdown-images/Articles/article8.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[article8]
+        _article_block_c9:
+            tab: Article Block
+            type: section
+            span: right
+            label: Article Block 
+            comment: <img src="/storage/app/media/dropdown-images/Articles/article9.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[article9] 
+        _article_block_c10:
+            tab: Article Block
+            type: section
+            span: right
+            label: Article Block 
+            comment: <img src="/storage/app/media/dropdown-images/Articles/article10.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[article10]
+        _article_block_c11:
+            tab: Article Block
+            type: section
+            span: right
+            label: Article Block 
+            comment: <img src="/storage/app/media/dropdown-images/Articles/article11.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[article11]
+        _article_block_c12:
+            tab: Article Block
+            type: section
+            span: right
+            label: Article Block 
+            comment: <img src="/storage/app/media/dropdown-images/Articles/article12.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[article12]                                                                                                                                                        
+        block_layout: 
+            tab: Article Block
+            label: Block page 
+            type: dropdown
+            span: left
+            default: 'article'
+            options:
+                article: Article 
+                article1: Article1
+                article2: Article2
+                article3: Article3
+                article4: Article4
+                article5: Article5
+                article6: Article6              
+                article7: Article7 
+                article8: Article8
+                article9: Article9                
+                article10: Article10
+                article11: Article11
+                article12: Article12
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two                         
+        text_color:
+            label: Text Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left   
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left                     
+        title:      
+            label: Title
+            span: full
+            type: text 
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article]     
+        description:      
+            label: Description
+            span: full
+            type: text 
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article]
+        title_a:      
+            label: Title
+            span: full
+            type: text 
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article1]     
+        description_a:      
+            label: Description
+            span: full
+            type: text 
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article1]                        
+        background_image:     
+            label: Background Image
+            type: mediafinder
+            mode: image
+            span: right
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article] 
+        line_color:
+            label: Line Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left  
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article2]                                                                               
+        description_a1:      
+            label: Description
+            span: full
+            type: text 
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article2]                    
+        content:
+            label: Item Description
+            type: richeditor
+            size: large
+            span: full                    
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article3]  
+        line_color_c:
+            label: Line Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left  
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article4]             
+        content_c:
+            label: Item Description
+            type: richeditor
+            size: large
+            span: full                    
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article4]  
+        line_color_c1:
+            label: Line Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left  
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article5]            
+        items:
+            label: Add Item            
+            span: full
+            type: repeater
+            form: 
+                fields: 
+                    content_c:
+                        label: Description
+                        type: richeditor
+                        size: large
+                        span: full
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article5]
+        line_color_c2:
+            label: Line Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left  
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article6]                
+        items_w:
+            label: Add Item            
+            span: full
+            type: repeater
+            form: 
+                fields: 
+                    content_c:
+                        label: Description
+                        type: richeditor
+                        size: large
+                        span: full
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article6]
+        items_w1:
+            label: Add Item            
+            span: full
+            type: repeater
+            form: 
+                fields: 
+                    content_c:
+                        label: Description
+                        type: richeditor
+                        size: large
+                        span: full
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article7] 
+        image:     
+            label: Image
+            type: mediafinder
+            mode: image
+            span: left                                               
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article8] 
+      
+        content_article8:
+            label: Description
+            type: richeditor
+            size: large
+            span: full
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article8] 
+        image_article9:     
+            label: Image
+            type: mediafinder
+            mode: image
+            span: left                                               
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article9] 
+      
+        content_article9:
+            label: Description
+            type: richeditor
+            size: large
+            span: full
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article9] 
+        button_left:
+            label: Button left      
+            prompt: 'Add new item'
+            span: left
+            type: repeater
+            form: 
+                fields:
+                    text:
+                        label: 'Text'
+                        span: left
+                        type: text
+                    url:
+                        label: 'URL'
+                        span: right
+                        type: text    
+                    color:
+                        label: Color
+                        type: balloon-selector            
+                        options:            
+                            btn-success: Success                                 
+                            btn-primary: Primary                
+                            btn-info: Info
+                            btn-warning: Warning
+                            btn-dark: Dark
+                            btn-danger: Danger
+                        span: left    
+                    on_off:
+                        label: Button (on-off)
+                        span: right
+                        type: switch
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article10]                                              
+        button_right:
+            label: Button right
+            prompt: 'Add new item'
+            span: right
+            type: repeater
+            form: 
+                fields:
+                    text:
+                        label: 'Text'
+                        span: left
+                        type: text
+                    url:
+                        label: 'URL'
+                        span: right
+                        type: text    
+                    color:
+                        label: Color
+                        type: balloon-selector            
+                        options:            
+                            btn-white-outline: White     
+                            btn-success-outline: Success                                 
+                            btn-primary-outline: Primary                
+                            btn-info-outline: Info
+                            btn-warning-outline: Warning
+                            btn-dark-outline: Dark
+                            btn-danger-outline: Danger
+                        span: left    
+                    on_off:
+                        label: Button (on-off)
+                        span: right
+                        type: switch 
+            trigger:
+                    action: show
+                    field: block_layout
+                    condition: value[article10] 
+        image_article11:
+            label: Image      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form: 
+                fields:   
+                    image:     
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: left  
+                    text:
+                        label: 'Text'
+                        span: right
+                        type: text 
+                    url:
+                        label: 'URL'
+                        span: right
+                        type: text                                                                             
+                    image_right:     
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: left  
+                    text_right:
+                        label: 'Text'
+                        span: right
+                        type: text   
+                    url_right:
+                        label: 'URL'
+                        span: right
+                        type: text                                                                                  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[article11]
+        image_article12:
+            label: Image      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form: 
+                fields:   
+                    image:     
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: left  
+                    text:
+                        label: 'Text'
+                        span: right
+                        type: text 
+                    url:
+                        label: 'URL'
+                        span: right
+                        type: text                                                                             
+                    image_right:     
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: left  
+                    text_right:
+                        label: 'Text'
+                        span: right
+                        type: text   
+                    url_right:
+                        label: 'URL'
+                        span: right
+                        type: text                                                                                  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[article12]  
+features:   
+    name: Features Blocks
+    description: Feature pages
+    icon: icon-spinner
+    fields: 
+        section_features_section:
+            label: Features
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'                    
+        _feature_block_v:
+            tab: Feature Block
+            type: section
+            span: right
+            label: Feature Block 
+            comment: <img src="/storage/app/media/dropdown-images/Features/feature.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature]       
+        _feature_block_v1:
+            tab: Feature Block
+            type: section
+            span: right
+            label: Feature Block 
+            comment: <img src="/storage/app/media/dropdown-images/Features/feature1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature1]               
+        _feature_block_v2:
+            tab: Feature Block
+            type: section
+            span: right
+            label: Feature Block 
+            comment: <img src="/storage/app/media/dropdown-images/Features/feature2.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature2] 
+        _feature_block_v3:
+            tab: Feature Block
+            type: section
+            span: right
+            label: Feature Block 
+            comment: <img src="/storage/app/media/dropdown-images/Features/feature3.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature3]
+        _feature_block_v4:
+            tab: Feature Block
+            type: section
+            span: right
+            label: Feature Block 
+            comment: <img src="/storage/app/media/dropdown-images/Features/feature4.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature4] 
+        _feature_block_v5:
+            tab: Feature Block
+            type: section
+            span: right
+            label: Feature Block 
+            comment: <img src="/storage/app/media/dropdown-images/Features/feature5.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature5] 
+        _feature_block_v6:
+            tab: Feature Block
+            type: section
+            span: right
+            label: Feature Block 
+            comment: <img src="/storage/app/media/dropdown-images/Features/feature6.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature6] 
+        _feature_block_v7:
+            tab: Feature Block
+            type: section
+            span: right
+            label: Feature Block 
+            comment: <img src="/storage/app/media/dropdown-images/Features/feature7.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature7]
+        _feature_block_v8:
+            tab: Feature Block
+            type: section
+            span: right
+            label: Feature Block 
+            comment: <img src="/storage/app/media/dropdown-images/Features/feature8.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature8]
+        _feature_block_v9:
+            tab: Feature Block
+            type: section
+            span: right
+            label: Feature Block 
+            comment: <img src="/storage/app/media/dropdown-images/Features/feature9.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature9] 
+        _feature_block_v10:
+            tab: Feature Block
+            type: section
+            span: right
+            label: Feature Block 
+            comment: <img src="/storage/app/media/dropdown-images/Features/feature10.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature10]
+        _feature_block_v11:
+            tab: Feature Block
+            type: section
+            span: right
+            label: Feature Block 
+            comment: <img src="/storage/app/media/dropdown-images/Features/feature11.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature11]
+        _feature_block_v12:
+            tab: Feature Block
+            type: section
+            span: right
+            label: Feature Block 
+            comment: <img src="/storage/app/media/dropdown-images/Features/feature12.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature12]                                                                                                                     
+        block_layout: 
+            tab: Feature Block
+            label: Block page 
+            type: dropdown
+            span: left
+            default: 'feature'
+            options:
+                feature: Feature
+                feature1: Feature1
+                feature2: Feature2
+                feature3: Feature3
+                feature4: Feature4
+                feature5: Feature5 
+                feature6: Feature6
+                feature7: Feature7
+                feature8: Feature8
+                feature9: Feature9
+                feature10: Feature10
+                feature11: Feature11
+                feature12: Feature12
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two         
+        text_color:
+            label: Text Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left                  
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#eeeeee"]
+            default: "#ffffff"
+            span: left            
+        background_card:
+            label: Background Card    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#eeeeee"]
+            default: "#ffffff"
+            span: left
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature]
+        background_card_a:
+            label: Background Card    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#eeeeee"]
+            default: "#ffffff"
+            span: left
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature1]                                                       
+        background_card_a1:
+            label: Background Card    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#eeeeee"]
+            default: "#ffffff"
+            span: left
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature2]                                                                   
+        add_card:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form: 
+                fields:   
+                    image:     
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: left  
+                    title:
+                        label: 'Title'
+                        span: right
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: right
+                        type: text     
+                    url:
+                        label: 'URL'
+                        span: right
+                        type: text 
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature]                        
+        add_card_s:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form: 
+                fields:   
+                    image:     
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: left  
+                    title:
+                        label: 'Title'
+                        span: right
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: right
+                        type: text     
+                    url:
+                        label: 'URL'
+                        span: right
+                        type: text
+                    color_button:
+                        label: Color Button
+                        type: balloon-selector
+                        span: right                                      
+                        options:   
+                            btn-white: White     
+                            btn-success: Success                                 
+                            btn-primary: Primary                
+                            btn-info: Info
+                            btn-warning: Warning
+                            btn-dark: Dark
+                            btn-danger: Danger  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature1]
+        
+        add_card_s1:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form: 
+                fields:                       
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: right
+                        type: text                                               
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature2] 
+        add_card_s2:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form: 
+                fields:                       
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: right
+                        type: text 
+                    icon:
+                        label: Icon
+                        span: left
+                        type: text                                                  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature3]    
+        background_image:
+            label: Background image
+            type: mediafinder
+            mode: image
+            span: left            
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature4] 
+        background_card_a2:
+            label: Background Card    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#eeeeee"]
+            default: "#ffffff"
+            span: left
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature4]           
+        add_card_s3:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form: 
+                fields:                       
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: right
+                        type: text 
+                    icon:
+                        label: Icon
+                        span: left
+                        type: text 
+                    color_button:
+                        label: Color Button
+                        type: balloon-selector
+                        span: right                                      
+                        options:   
+                            btn-white: White     
+                            btn-success: Success                                 
+                            btn-primary: Primary                
+                            btn-info: Info
+                            btn-warning: Warning
+                            btn-dark: Dark
+                            btn-danger: Danger
+                    url:
+                        label: URL
+                        span: left
+                        type: text                                                             
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature4] 
+        add_card_s4:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form: 
+                fields:                   
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: right
+                        type: text     
+                    icon:
+                        label: Icon
+                        span: left
+                        type: text
+                    color_icon:
+                        label: Color Icon    
+                        type: colorpicker
+                        availableColors: ["#ffffff","#56eeff","#ff0000","#ffa891","#4f4943","#000000","#e7e6e6"]
+                        default: "#ffffff"
+                        span: right  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature5]
+        background_card_a3:
+            label: Background Card    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#eeeeee"]
+            default: "#ffffff"
+            span: left
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature6] 
+        add_card_s5:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:                   
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: right
+                        type: text     
+                    icon:
+                        label: Icon
+                        span: left
+                        type: text
+                    url:
+                        label: URL
+                        span: right
+                        type: text    
+                    color_icon:
+                        label: Color Icon    
+                        type: colorpicker
+                        availableColors: ["#ffffff","#56eeff","#ff0000","#ffa891","#4f4943","#000000","#e7e6e6"]
+                        default: "#ffffff"
+                        span: right  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature6]
+        add_card_s6:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:                   
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: right
+                        type: text     
+                    icon:
+                        label: Icon
+                        span: left
+                        type: text
+                    url:
+                        label: URL
+                        span: right
+                        type: text    
+                    color_icon:
+                        label: Color Icon    
+                        type: colorpicker
+                        availableColors: ["#ffffff","#56eeff","#ff0000","#ffa891","#4f4943","#000000","#e7e6e6"]
+                        default: "#ffffff"
+                        span: right  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature7] 
+        add_card_s6:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:                   
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: right
+                        type: text     
+                    icon:
+                        label: Icon
+                        span: left
+                        type: text
+                    url:
+                        label: URL
+                        span: right
+                        type: text    
+                    color_icon:
+                        label: Color Icon    
+                        type: colorpicker
+                        availableColors: ["#ffffff","#56eeff","#ff0000","#ffa891","#4f4943","#000000","#e7e6e6"]
+                        default: "#ffffff"
+                        span: right  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature7] 
+        image_feature:
+            label: Image
+            type: mediafinder
+            mode: image
+            span: left            
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature8]                        
+        title_feature:
+            label: 'Title'
+            span: right
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature8]
+        description_feature:
+            label: 'Description'
+            span: right
+            type: text                   
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature8]          
+        add_card_s7:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:                   
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: right
+                        type: text     
+                    icon:
+                        label: Icon
+                        span: left
+                        type: text                            
+                    color_icon:
+                        label: Color Icon    
+                        type: colorpicker
+                        availableColors: ["#ffffff","#56eeff","#ff0000","#ffa891","#4f4943","#000000","#e7e6e6"]
+                        default: "#ffffff"
+                        span: right  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature8]
+        image_feature9:
+            label: Image
+            type: mediafinder
+            mode: image
+            span: left            
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature9]        
+        title_feature9:
+            label: 'Title'
+            span: right
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature9]
+        description_feature9:
+            label: 'Description'
+            span: right
+            type: text                   
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature9] 
+        add_card_s8:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:                   
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: right
+                        type: text     
+                    icon:
+                        label: Icon
+                        span: left
+                        type: text                            
+                    color_icon:
+                        label: Color Icon    
+                        type: colorpicker
+                        availableColors: ["#ffffff","#56eeff","#ff0000","#ffa891","#4f4943","#000000","#e7e6e6"]
+                        default: "#ffffff"
+                        span: right  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature9] 
+        image_feature10:
+            label: Image
+            type: mediafinder
+            mode: image
+            span: left            
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature10]        
+        title_feature10:
+            label: 'Title'
+            span: right
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature10]
+        description_feature10:
+            label: 'Description'
+            span: right
+            type: text                   
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature10] 
+        add_card_s9:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:                   
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: right
+                        type: text     
+                    icon:
+                        label: Icon
+                        span: left
+                        type: text                            
+                    color_icon:
+                        label: Color Icon    
+                        type: colorpicker
+                        availableColors: ["#ffffff","#56eeff","#ff0000","#ffa891","#4f4943","#000000","#e7e6e6"]
+                        default: "#ffffff"
+                        span: right  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature10] 
+        title_feature11:
+            label: 'Title'
+            span: left
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature11]
+        description_feature11:
+            label: 'Description'
+            span: right
+            type: text                   
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature11]  
+        add_card_s10:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:           
+                    image:
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: right    
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: left
+                        type: text     
+                    url:
+                        label: URL
+                        span: left
+                        type: text                            
+                    color_button:
+                        label: Color Button
+                        type: balloon-selector
+                        span: right                                      
+                        options:   
+                            btn-white: White     
+                            btn-success: Success                                 
+                            btn-primary: Primary                
+                            btn-info: Info
+                            btn-warning: Warning
+                            btn-dark: Dark
+                            btn-danger: Danger                                                          
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature11] 
+        title_feature12:
+            label: 'Title'
+            span: left
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature12]
+        description_feature12:
+            label: 'Description'
+            span: right
+            type: text                   
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature12]  
+        add_card_s11:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:           
+                    image:
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: right                    
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: left
+                        type: text     
+                    background_color:
+                        label: Background Color    
+                        type: colorpicker
+                        availableColors: ["#ffffff","#00a8ff","#ff0000","#ffa891","#4f4943","#000000","#eeeeee"]
+                        default: "#00a8ff"
+                        span: left                                            
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[feature12] 
+price:   
+    name: Pricing Tables
+    description: Price pages
+    icon: icon-money
+    fields:            
+        section_pricing_section:
+            label: Pricing Tables
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'         
+        _price_block_v:
+            tab: Price Block
+            type: section
+            span: right
+            label: Price Block 
+            comment: <img src="/storage/app/media/dropdown-images/Price-Tables/price.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tables]
+        _price_block_v1:
+            tab: Price Block
+            type: section
+            span: right
+            label: Price Block 
+            comment: <img src="/storage/app/media/dropdown-images/Price-Tables/price1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tables1]        
+        _price_block_v2:
+            tab: Price Block
+            type: section
+            span: right
+            label: Price Block 
+            comment: <img src="/storage/app/media/dropdown-images/Price-Tables/price2.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tables2]                
+        block_layout: 
+            tab: Price Block
+            label: Block page 
+            type: dropdown
+            span: left
+            default: 'price'
+            options:
+                tables: Tables
+                tables1: Tables1
+                tables2: Tables2
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two           
+        text_color:
+            label: Text Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left   
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#00a8ff","#ff0000","#ffa891","#000000","#eeeeee"]
+            default: "#00a8ff"
+            span: left                                                            
+        add_card_w:
+            label: Add Price     
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:   
+                    price:        
+                        label: 'Price'        
+                        span: right
+                        type: repeater
+                        form:
+                            fields:                                                                          
+                                price0:                        
+                                    span: auto
+                                    type: text                                  
+                                price1:                        
+                                    span: auto
+                                    type: text                                  
+                                price2:                        
+                                    span: auto
+                                    type: text
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text             
+                    description:
+                        label: 'Description'
+                        span: left
+                        type: text            
+                    traffic:
+                        label: 'Traffic Size'
+                        span: left
+                        type: text                                             
+                    url:  
+                        label: 'URL Button'
+                        span: left
+                        type: text             
+                    color_button:
+                        label: Color
+                        type: balloon-selector        
+                        span: right    
+                        options:            
+                            btn-white: White     
+                            btn-success: Success                                 
+                            btn-primary: Primary                
+                            btn-info: Info
+                            btn-warning: Warning
+                            btn-dark: Dark
+                            btn-danger: Danger                                                      
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tables] 
+        add_card_w1:
+            label: Add Price     
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:   
+                    price:        
+                        label: 'Price'        
+                        span: right
+                        type: repeater
+                        form:
+                            fields:                                                                          
+                                price0:                        
+                                    span: auto
+                                    type: text                                  
+                                price1:                        
+                                    span: auto
+                                    type: text                                  
+                                price2:                        
+                                    span: auto
+                                    type: text
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text             
+                    description:
+                        label: 'Description'
+                        span: left
+                        type: text            
+                    traffic:
+                        label: 'Traffic Size'
+                        span: left
+                        type: text               
+                    add_text:
+                        label: 'Add text'
+                        span: left
+                        type: text 
+                    url:  
+                        label: 'URL Button'
+                        span: right
+                        type: text                                        
+                    add_text_c:
+                        label: 'Add text'
+                        span: left
+                        type: text
+                    color_button:
+                        label: Color
+                        type: balloon-selector        
+                        span: right    
+                        options:            
+                            btn-white: White     
+                            btn-success: Success                                 
+                            btn-primary: Primary                
+                            btn-info: Info
+                            btn-warning: Warning
+                            btn-dark: Dark
+                            btn-danger: Danger                                                          
+                    add_text_c1:
+                        label: 'Add text'
+                        span: left
+                        type: text                                                                              
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tables1] 
+        add_card_w2:
+            label: Add Price     
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:   
+                    price:        
+                        label: 'Price'        
+                        span: right
+                        type: repeater
+                        form:
+                            fields:                                                                          
+                                price0:                        
+                                    span: auto
+                                    type: text                                  
+                                price1:                        
+                                    span: auto
+                                    type: text                                  
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text             
+                    description:
+                        label: 'Description'
+                        span: left
+                        type: text                                
+                    url:  
+                        label: 'URL Button'
+                        span: left
+                        type: text                                                           
+                    color_button:
+                        label: Color
+                        type: balloon-selector        
+                        span: right    
+                        options:            
+                            btn-white: White     
+                            btn-success: Success                                 
+                            btn-primary: Primary                
+                            btn-info: Info
+                            btn-warning: Warning
+                            btn-dark: Dark
+                            btn-danger: Danger                                                                                                                                                          
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tables2]
+services:   
+    name: Services
+    description: Service pages
+    icon: icon-list-ul
+    fields:        
+        section_services_section:
+            label: Services
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'             
+        _service_block_v:
+            tab: Service Block
+            type: section
+            span: right
+            label: Service Block 
+            comment: <img src="/storage/app/media/dropdown-images/Services/services.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[service]  
+        _service_block_v1:
+            tab: Service Block
+            type: section
+            span: right
+            label: Service Block 
+            comment: <img src="/storage/app/media/dropdown-images/Services/services1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[service1]          
+        _service_block_v2:
+            tab: Service Block
+            type: section
+            span: right
+            label: Service Block 
+            comment: <img src="/storage/app/media/dropdown-images/Services/services2.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[service2]                  
+        _service_block_v3:
+            tab: Service Block
+            type: section
+            span: right
+            label: Service Block 
+            comment: <img src="/storage/app/media/dropdown-images/Services/services3.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[service3]                  
+        _service_block_v4:
+            tab: Service Block
+            type: section
+            span: right
+            label: Service Block 
+            comment: <img src="/storage/app/media/dropdown-images/Services/services4.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[service4]                                  
+        block_layout: 
+            tab: Service Block
+            label: Block page 
+            type: dropdown
+            span: left
+            default: 'service'
+            options:
+                service: Service
+                service1: Service1
+                service2: Service2
+                service3: Service3 
+                service4: Service4
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two         
+        text_color:
+            label: Text Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left                     
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#00a8ff","#ff0000","#ffa891","#4f4943","#000000","#eeeeee"]
+            default: "#00a8ff"
+            span: left             
+        title_service:
+            label: 'Title'
+            span: left
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[service]                                                                                                                                                                                                
+        add_card_w:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:           
+                    image:
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: right    
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: left
+                        type: text  
+                    text_button:
+                        label: 'Text Button'
+                        span: left
+                        type: text 
+                    url_button:
+                        label: 'URL Button'
+                        span: left
+                        type: text             
+                    color_button:
+                        label: Color
+                        type: balloon-selector        
+                        span: left    
+                        options:            
+                            btn-white-outline: White     
+                            btn-success-outline: Success                                 
+                            btn-primary-outline: Primary                
+                            btn-info-outline: Info
+                            btn-warning-outline: Warning
+                            btn-dark-outline: Dark
+                            btn-danger-outline: Danger                                                                   
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[service]
+        add_card_w1:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:           
+                    image:
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: right    
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: left
+                        type: text  
+                    price_new:
+                        label: 'Price New'
+                        span: left
+                        type: text 
+                    price_old:
+                        label: 'Price old'
+                        span: left
+                        type: text     
+                    url_button:
+                        label: 'URL Button'
+                        span: left
+                        type: text             
+                    color_button:
+                        label: Color
+                        type: balloon-selector        
+                        span: left    
+                        options:            
+                            btn-white-outline: White     
+                            btn-success-outline: Success                                 
+                            btn-primary-outline: Primary                
+                            btn-info-outline: Info
+                            btn-warning-outline: Warning
+                            btn-dark-outline: Dark
+                            btn-danger-outline: Danger                                                                   
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[service1]  
+        title_service2:
+            label: 'Title'
+            span: left
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[service2]   
+        add_card_w2:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:                           
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: right
+                        type: text  
+                    price:
+                        label: 'Price'
+                        span: left
+                        type: text                         
+                    url:
+                        label: 'URL List'
+                        span: right
+                        type: text                                                                                                    
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[service2]   
+        add_card_w3:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:           
+                    image:
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: right    
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: left
+                        type: text  
+                    price:
+                        label: 'Price'
+                        span: left
+                        type: text                 
+                    url_button:
+                        label: 'URL Button'
+                        span: left
+                        type: text             
+                    color_button:
+                        label: Color
+                        type: balloon-selector        
+                        span: left    
+                        options:            
+                            btn-white-outline: White     
+                            btn-success-outline: Success                                 
+                            btn-primary-outline: Primary                
+                            btn-info-outline: Info
+                            btn-warning-outline: Warning
+                            btn-dark-outline: Dark
+                            btn-danger-outline: Danger                                                                   
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[service3] 
+        title_service3:
+            label: 'Title'
+            span: left
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[service4]        
+        add_card_w4:
+            label: Add Card      
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:           
+                    image:
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: right    
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text 
+                    description:
+                        label: 'Description'
+                        span: left
+                        type: text  
+                    price:
+                        label: 'Price'
+                        span: left
+                        type: text                                                                                                     
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[service4]                 
+counters: 
+    name: Counters
+    description: Counter pages
+    icon: icon-cubes
+    fields:
+        section_counters_section:
+            label: Counters
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'
+        _counter_block_c:
+            tab: Counter Block
+            type: section
+            span: right
+            label: Counter Block 
+            comment: <img src="/storage/app/media/dropdown-images/Counters/counters.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[counter]  
+        _counter_block_c1:
+            tab: Counter Block
+            type: section
+            span: right
+            label: Counter Block 
+            comment: <img src="/storage/app/media/dropdown-images/Counters/counter1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[counter1]          
+        _counter_block_c2:
+            tab: Counter Block
+            type: section
+            span: right
+            label: Counter Block 
+            comment: <img src="/storage/app/media/dropdown-images/Counters/counter2.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[counter2]                  
+        _counter_block_c3:
+            tab: Counter Block
+            type: section
+            span: right
+            label: Counter Block 
+            comment: <img src="/storage/app/media/dropdown-images/Counters/counter3.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[counter3]
+        _counter_block_c4:
+            tab: Counter Block
+            type: section
+            span: right
+            label: Counter Block 
+            comment: <img src="/storage/app/media/dropdown-images/Counters/counter4.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[counter4] 
+        _counter_block_c5:
+            tab: Counter Block
+            type: section
+            span: right
+            label: Counter Block 
+            comment: <img src="/storage/app/media/dropdown-images/Counters/counter5.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[counter5]                                          
+        block_layout: 
+            tab: Counter Block
+            label: Block page 
+            type: dropdown
+            span: left
+            default: 'counter'
+            options:
+                counter: Counter
+                counter1: Counter1
+                counter2: Counter2
+                counter3: Counter3
+                counter4: Counter4
+                counter5: Counter5
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two         
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left   
+        title_color:
+            label: Title Color
+            type: colorpicker
+            availableColors: ["#ffffff","#fe3636","#f289f2","#ff663f","#3f21ff","#000000",#e7e6e6"]
+            default: "#ffffff"
+            span: left
+        description_color:
+            label: Description Color
+            type: colorpicker
+            availableColors: ["#ffffff","#fe3636","#f289f2","#ff663f","#3f21ff","#000000",#666363"]
+            default: "#ffffff"
+            span: left 
+        title:    
+            label: Title   
+            span: full
+            type: text                  
+        content:
+            label: Content
+            type: textarea
+            size: small
+            span: full                 
+        cards:  
+            label: Cards
+            prompt: 'Add new item'
+            span: full
+            type: repeater  
+            form:     
+                fields:
+                    icon:      
+                        label: Icon
+                        span: left
+                        type: text 
+                    title:      
+                        label: Title
+                        span: right
+                        type: text 
+                    subtitle:
+                        label: Subtitle
+                        span: left
+                        type: text                 
+                    content:
+                        label: Content
+                        type: textarea
+                        size: small
+                        span: right
+                    card_background:
+                        label: Card Background    
+                        type: colorpicker
+                        availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+                        default: "#ffffff"
+                        span: auto     
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[counter] 
+        image_counter1:
+            label: Image
+            type: mediafinder
+            mode: image
+            span: left                        
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[counter1]        
+        cards_counter1:  
+            label: Cards
+            prompt: 'Add new item'
+            span: full
+            type: repeater  
+            form:     
+                fields:
+                    icon:      
+                        label: Icon
+                        span: left
+                        type: text 
+                    title:      
+                        label: Title
+                        span: right
+                        type: text 
+                    subtitle:
+                        label: Subtitle
+                        span: left
+                        type: text                 
+                    content:
+                        label: Content
+                        type: textarea
+                        size: small
+                        span: right
+                    card_background:
+                        label: Card Background    
+                        type: colorpicker
+                        availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+                        default: "#ffffff"
+                        span: auto     
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[counter1]   
+        image_counter2:
+            label: Image
+            type: mediafinder
+            mode: image
+            span: left                        
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[counter2]                      
+        cards_counter2:  
+            label: Cards
+            prompt: 'Add new item'
+            span: full
+            type: repeater  
+            form:     
+                fields:
+                    icon:      
+                        label: Icon
+                        span: left
+                        type: text 
+                    title:      
+                        label: Title
+                        span: right
+                        type: text 
+                    subtitle:
+                        label: Subtitle
+                        span: left
+                        type: text                 
+                    content:
+                        label: Content
+                        type: textarea
+                        size: small
+                        span: right
+                    card_background:
+                        label: Card Background    
+                        type: colorpicker
+                        availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+                        default: "#ffffff"
+                        span: auto     
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[counter2]                 
+        image_counter3:
+            label: Image
+            type: mediafinder
+            mode: image
+            span: left                        
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[counter3]                      
+        cards_counter3:  
+            label: Cards
+            prompt: 'Add new item'
+            span: full
+            type: repeater  
+            form:     
+                fields:
+                    icon:      
+                        label: Icon
+                        span: left
+                        type: text 
+                    title:      
+                        label: Title
+                        span: right
+                        type: text 
+                    subtitle:
+                        label: Subtitle
+                        span: left
+                        type: text                 
+                    content:
+                        label: Content
+                        type: textarea
+                        size: small
+                        span: right
+                    card_background:
+                        label: Card Background    
+                        type: colorpicker
+                        availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+                        default: "#ffffff"
+                        span: auto     
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[counter3] 
+        cards_counter4:  
+            label: Cards
+            prompt: 'Add new item'
+            span: full
+            type: repeater  
+            form:     
+                fields:
+                    icon:      
+                        label: Icon
+                        span: left
+                        type: text 
+                    title:      
+                        label: Title
+                        span: right
+                        type: text 
+                    subtitle:
+                        label: Subtitle
+                        span: left
+                        type: text                 
+                    content:
+                        label: Content
+                        type: textarea
+                        size: small
+                        span: right
+                    card_background:
+                        label: Card Background    
+                        type: colorpicker
+                        availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+                        default: "#ffffff"
+                        span: auto     
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[counter4]                         
+        cards_counter5:  
+            label: Cards
+            prompt: 'Add new item'
+            span: full
+            type: repeater  
+            form:     
+                fields:
+                    icon:      
+                        label: Icon
+                        span: left
+                        type: text 
+                    title:      
+                        label: Title
+                        span: right
+                        type: text 
+                    subtitle:
+                        label: Subtitle
+                        span: left
+                        type: text                 
+                    content:
+                        label: Content
+                        type: textarea
+                        size: small
+                        span: right
+                    card_background:
+                        label: Card Background    
+                        type: colorpicker
+                        availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#4f4943","#000000","#e7e6e6"]
+                        default: "#ffffff"
+                        span: auto     
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[counter5]    
+countdowns:   
+    name: Countdowns
+    description: Countdown pages
+    icon: icon-hourglass-half
+    fields:        
+        section_countdown_section:
+            label: Countdown
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'             
+        _service_block_v:
+            tab: Countdown Block
+            type: section
+            span: right
+            label: Countdown Block 
+            comment: <img src="/storage/app/media/dropdown-images/Countdown/countdown.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[countdown] 
+        _service_block_v1:
+            tab: Countdown Block
+            type: section
+            span: right
+            label: Countdown Block 
+            comment: <img src="/storage/app/media/dropdown-images/Countdown/countdown1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[countdown1]         
+        block_layout: 
+            tab: Price Block
+            label: Block page 
+            type: dropdown
+            span: left
+            default: 'price'
+            options:
+                countdown: Countdown
+                countdown1: Countdown1 
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two                
+        title:
+            label: 'Title'
+            span: left
+            type: text
+        description:
+            label: 'Description'
+            span: right
+            type: text            
+        start:
+            label: 'Start data (2019/01/31)'
+            span: full
+            type: text                                                                                        
+progress:   
+    name: Progress Bars
+    description: Progres pages
+    icon: icon-bar-chart
+    fields:   
+        section_progress_section:
+            label: Progress Tables
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'                           
+        _progres_block_v:
+            tab: Progres Block
+            type: section
+            span: right
+            label: Progres Block 
+            comment: <img src="/storage/app/media/dropdown-images/Progress/progress.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[progres]  
+        _progres_block_v1:
+            tab: Progres Block
+            type: section
+            span: right
+            label: Progres Block 
+            comment: <img src="/storage/app/media/dropdown-images/Progress/progress1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[progres1]          
+        _progres_block_v2:
+            tab: Progres Block
+            type: section
+            span: right
+            label: Progres Block 
+            comment: <img src="/storage/app/media/dropdown-images/Progress/progress2.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[progres2]          
+        block_layout: 
+            tab: Progres Block
+            label: Block page 
+            type: dropdown
+            span: left
+            default: 'progres'
+            options:
+                progres: Progres
+                progres1: Progres1
+                progres2: Progres2
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two         
+        text_color:
+            label: Text Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left   
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#00a8ff","#ff0000","#ffa891","#000000","#eeeeee"]
+            default: "#00a8ff"
+            span: left  
+        color_progress:
+            label: Color Progress    
+            type: colorpicker
+            availableColors: ["#56eeff","#ffa891","#000000"]
+            default: "#00a8ff"
+            span: left                     
+        title:
+            label: 'Title'
+            span: full
+            type: text         
+        description:  
+            label: 'Description'
+            span: full
+            type: text
+        item_title:
+            label: 'Item Title'
+            span: left
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[progres1]         
+        item_description:  
+            label: 'Item Description'
+            span: right
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[progres1]    
+        add_item:
+            label: Add Item     
+            prompt: 'Add new item'
+            span: full
+            type: repeater            
+            form:
+                fields:      
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text    
+                    percent:
+                        label: 'Percent'
+                        span: right
+                        type: number        
+timelines:   
+    name: Timelines
+    description: Timeline pages
+    icon: icon-clipboard
+    fields:             
+        section_timelines_section:
+            label: Timelines Tables
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'                 
+        _timeline_block_v:
+            tab: Timeline Block
+            type: section
+            span: right
+            label: Timeline Block 
+            comment: <img src="/storage/app/media/dropdown-images/Timelines/timelines.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[timeline]
+        _timeline_block_v1:
+            tab: Timeline Block
+            type: section
+            span: right
+            label: Timeline Block 
+            comment: <img src="/storage/app/media/dropdown-images/Timelines/timelines1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[timeline1]
+        _steps_block_v:
+            tab: Steps Block
+            type: section
+            span: right
+            label: Steps Block 
+            comment: <img src="/storage/app/media/dropdown-images/Timelines/steps.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[step]                  
+        _steps_block_v1:
+            tab: Steps Block
+            type: section
+            span: right
+            label: Steps Block 
+            comment: <img src="/storage/app/media/dropdown-images/Timelines/steps1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[step1]
+        _steps_block_v2:
+            tab: Steps Block
+            type: section
+            span: right
+            label: Steps Block 
+            comment: <img src="/storage/app/media/dropdown-images/Timelines/steps2.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[step2]                                                    
+        block_layout: 
+            tab: Timeline Block
+            label: Block page 
+            type: dropdown
+            span: left
+            default: 'timeline'
+            options:
+                timeline: Timeline 
+                timeline1: Timeline1
+                step: Step
+                step1: Step1 
+                step2: Step2
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two         
+        text_color:
+            label: Text Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left   
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#00a8ff","#ff0000","#ffa891","#000000","#eeeeee"]
+            default: "#00a8ff"
+            span: left 
+        image_steps:
+            label: Image
+            type: mediafinder
+            mode: image
+            span: left                        
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[step]                                                                                          
+        title:
+            label: 'Title'
+            span: full
+            type: text         
+        description:  
+            label: 'Description'
+            span: full
+            type: text    
+        add_card_w:
+            label: Add Item     
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:            
+                    data:
+                        label: 'Data'
+                        span: left
+                        type: text         
+                    title:
+                        label: 'Title'
+                        span: right
+                        type: text             
+                    description:  
+                        label: 'Description'
+                        span: left
+                        type: text                     
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[timeline] 
+        add_card_w1:
+            label: Add Item     
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:                                       
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text             
+                    description:  
+                        label: 'Description'
+                        span: right
+                        type: text 
+                    icon:  
+                        label: 'Icon'
+                        span: left
+                        type: text 
+                    color_icon:
+                        label: Color Icon    
+                        type: colorpicker
+                        availableColors: ["#ffffff","#00a8ff","#ff0000","#ffa891","#000000","#eeeeee"]
+                        default: "#00a8ff"
+                        span: right                             
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[timeline1]           
+        add_item_w:
+            label: Add Item     
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:                                       
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text             
+                    description:  
+                        label: 'Description'
+                        span: right
+                        type: text                                               
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[step] 
+        add_item_w1:
+            label: Add Item     
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:                                       
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text             
+                    description:  
+                        label: 'Description'
+                        span: right
+                        type: text                                               
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[step1]
+        add_item_w2:
+            label: Add Item     
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:                                       
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text             
+                    description:  
+                        label: 'Description'
+                        span: right
+                        type: text                                               
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[step2]   
+tabs:   
+    name: Accordions & Toggles & Tabs
+    description: Drop-Down Pages
+    icon: icon-th-large
+    fields:   
+        section_tabs_section:
+            label: Drop Down Text
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'                           
+        _drop_down_block_v:
+            tab: Drop-Down Block
+            type: section
+            span: right
+            label: Drop Down Block 
+            comment: <img src="/storage/app/media/dropdown-images/drop-down-text/d-d-text.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab]
+        _drop_down_block_v1:
+            tab: Drop-Down Block
+            type: section
+            span: right
+            label: Drop Down Block 
+            comment: <img src="/storage/app/media/dropdown-images/drop-down-text/d-d-text1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab1]
+        _drop_down_block_v2:
+            tab: Drop-Down Block
+            type: section
+            span: right
+            label: Drop Down Block 
+            comment: <img src="/storage/app/media/dropdown-images/drop-down-text/d-d-text2.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab2]
+        _drop_down_block_v3:
+            tab: Drop-Down Block
+            type: section
+            span: right
+            label: Drop Down Block 
+            comment: <img src="/storage/app/media/dropdown-images/drop-down-text/d-d-text3.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab3]                                                                                                                   
+        _drop_down_block_v4:
+            tab: Drop-Down Block
+            type: section
+            span: right
+            label: Drop Down Block 
+            comment: <img src="/storage/app/media/dropdown-images/drop-down-text/accordion.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab4]
+        _drop_down_block_v5:
+            tab: Drop-Down Block
+            type: section
+            span: right
+            label: Drop Down Block 
+            comment: <img src="/storage/app/media/dropdown-images/drop-down-text/accordion1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab5]                
+        block_layout: 
+            tab: Drop-Down Block
+            label: Drop-Down page 
+            type: dropdown
+            span: left
+            default: 'tab'
+            options:
+                tab: Tab
+                tab1: Tab1 
+                tab2: Tab2
+                tab3: Tab3
+                tab4: Tab4
+                tab5: Tab5
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two         
+        text_color:
+            label: Text Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left                                            
+        button_color:
+            label: Button Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#149dcc","#ff3366","#000000","#e7e6e6"]
+            default: "#149dcc"
+            span: left                                                                                                             
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab]
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#149dcc","#ff3366","#000000","#e7e6e6"]
+            default: "#149dcc"
+            span: left                                                                                                                         
+        button_color_c:
+            label: Button Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ff3366","#000000","#e7e6e6"]
+            default: "#149dcc"
+            span: left                                                                                                             
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab1] 
+        button_color_c1:
+            label: Button Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ff3366","#000000","#e7e6e6"]
+            default: "#149dcc"
+            span: left                                                                                                             
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab2]  
+        button_color_c2:
+            label: Button Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ff3366","#000000","#e7e6e6"]
+            default: "#149dcc"
+            span: left                                                                                                             
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab3]                      
+        title:
+            label: 'Title'
+            span: full
+            type: text                                              
+        add_button_w:
+            label: Add Button     
+            prompt: 'Add new item'
+            span: left
+            type: repeater
+            form:
+                fields:                                       
+                    title:
+                        label: 'Title'
+                        span: full
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab]                            
+        add_description_w:
+            label: Add Description     
+            prompt: 'Add new item'
+            span: right
+            type: repeater
+            form:
+                fields:                                       
+                    description:
+                        label: 'Description'
+                        span: full
+                        type: text                                                                                
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab]
+        add_button_w1:
+            label: Add Button     
+            prompt: 'Add new item'
+            span: left
+            type: repeater
+            form:
+                fields:                                       
+                    title:
+                        label: 'Title'
+                        span: full
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab1]                            
+        add_description_w1:
+            label: Add Description     
+            prompt: 'Add new item'
+            span: right
+            type: repeater
+            form:
+                fields:                                       
+                    description:
+                        label: 'Description'
+                        span: full
+                        type: text                                                                                
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab1]
+        description:
+            label: 'Description'
+            span: full
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab2]                
+        add_button_w2:
+            label: Add Button     
+            prompt: 'Add new item'
+            span: left
+            type: repeater
+            form:
+                fields:                                       
+                    title:
+                        label: 'Button'
+                        span: full
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab2]
+        add_content_w:
+            label: Add Content     
+            prompt: 'Add new content'
+            span: full
+            type: repeater            
+            form:
+                fields:
+                    add_item:
+                        label: Add Item     
+                        prompt: 'Add new item'
+                        span: full
+                        type: repeater            
+                        form:                                       
+                            fields:
+                                icon:
+                                    label: 'Icon'
+                                    span: left
+                                    type: text
+                                title:
+                                    label: 'Title'
+                                    span: right
+                                    type: text
+                                icon_color:
+                                    label: Icon Color    
+                                    type: colorpicker
+                                    availableColors: ["#149dcc","#ff3366","#000000","#e7e6e6"]
+                                    default: "#149dcc"
+                                    span: left     
+                                description:
+                                    label: 'Description'
+                                    span: right
+                                    type: text                                  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab2]
+        background_image_w:
+            label: Background image
+            type: mediafinder
+            mode: image
+            span: right            
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab3] 
+        add_button_w3:
+            label: Add Button     
+            prompt: 'Add new item'
+            span: left
+            type: repeater
+            form:
+                fields:                                       
+                    title:
+                        label: 'Button'
+                        span: full
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab3]        
+        add_content_w1:
+            label: Add Content     
+            prompt: 'Add new content'
+            span: full
+            type: repeater            
+            form:
+                fields:                              
+                    description:
+                        label: 'Description'
+                        span: full
+                        type: text                                  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab3]  
+        add_accordion_w:
+            label: Add Accordion     
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:                                       
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text
+                    description:
+                        label: 'Description'
+                        span: right
+                        type: text    
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab4]          
+        add_accordion_w1:
+            label: Add Accordion     
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            form:
+                fields:                                       
+                    title:
+                        label: 'Title'
+                        span: left
+                        type: text
+                    description:
+                        label: 'Description'
+                        span: right
+                        type: text    
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab5]
+        background_image:
+            label: Background image
+            type: mediafinder
+            mode: image
+            span: left            
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab]                                
+        background_image_w1:
+            label: Background image
+            type: mediafinder
+            mode: image
+            span: left
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[tab5]   
+informations:   
+    name: Info Blocks
+    description: Information Pages
+    icon: icon-file
+    fields:         
+        section_informations_section:
+            label: Informations
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'            
+        _info_block_v:
+            tab: Information Block
+            type: section
+            span: right
+            label: Information Block 
+            comment: <img src="/storage/app/media/dropdown-images/Informations/information.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[info]  
+        _info_block_v1:
+            tab: Information Block
+            type: section
+            span: right
+            label: Information Block 
+            comment: <img src="/storage/app/media/dropdown-images/Informations/information1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[info1]  
+        _info_block_v2:
+            tab: Information Block
+            type: section
+            span: right
+            label: Information Block 
+            comment: <img src="/storage/app/media/dropdown-images/Informations/information2.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[info2]
+        _info_block_v3:
+            tab: Information Block
+            type: section
+            span: right
+            label: Information Block 
+            comment: <img src="/storage/app/media/dropdown-images/Informations/information3.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[info3]                          
+        block_layout: 
+            tab: Information Block
+            label: Information page 
+            type: dropdown
+            span: left
+            default: 'tab'
+            options:
+                info: info
+                info1: info1 
+                info2: info2
+                info3: info3
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two         
+        text_color:
+            label: Text Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#ffa891","#149dcc","#ff3366","#000000","#e7e6e6"]
+            default: "#149dcc"
+            span: right  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[info]
+        background_color_w:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#ffa891","#149dcc","#ff3366","#000000","#e7e6e6"]
+            default: "#149dcc"
+            span: right  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[info1]                    
+        title:
+            label: 'Title'
+            span: left
+            type: text        
+        description:
+            label: 'Description'
+            span: left
+            type: text                                                                                                  
+        add_button:
+            label: Add Button     
+            prompt: 'Add new button'
+            span: right
+            type: repeater            
+            form:
+                fields:      
+                    text:
+                        label: 'Text'
+                        span: left
+                        type: text
+                    url:
+                        label: 'URL'
+                        span: right
+                        type: text                     
+                    color:
+                        label: Color button
+                        type: balloon-selector            
+                        span: left 
+                        options:            
+                            btn-success: Success                                 
+                            btn-primary: Primary                
+                            btn-info: Info
+                            btn-warning: Warning
+                            btn-dark: Dark
+                            btn-danger: Danger                                                
+        background_image:
+            label: Background image
+            type: mediafinder
+            mode: image
+            span: left
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[info2] 
+        url_video:
+            label: 'URL Vidoe'
+            span: left
+            type: text          
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[info3] 
+forms:   
+    name: Forms
+    description: Entry Form Pages
+    icon: icon-list-alt
+    fields:        
+        section_forms_section:
+            label: Forms
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'             
+        _form_block_v:
+            tab: Entry Form Block
+            type: section
+            span: right
+            label: Entry Form Block 
+            comment: <img src="/storage/app/media/dropdown-images/Entry_Forms/entry_forms.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[form] 
+        _form_block_v1:
+            tab: Entry Form Block
+            type: section
+            span: right
+            label: Entry Form Block 
+            comment: <img src="/storage/app/media/dropdown-images/Entry_Forms/entry_forms1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[form1]
+        _form_block_v2:
+            tab: Entry Form Block
+            type: section
+            span: right
+            label: Entry Form Block 
+            comment: <img src="/storage/app/media/dropdown-images/Entry_Forms/entry_forms2.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[form2]                          
+        block_layout: 
+            tab: Entry Form Blocks
+            label: Entry Form pages
+            type: dropdown
+            span: left
+            default: 'tab'
+            options:
+                form: form
+                form1: form1
+                form2: form2 
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two                                          
+        title:
+            label: 'Title'
+            span: left
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[form]                                          
+        description:
+            label: 'Description'
+            span: left
+            type: text                
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[form]
+        text_color:
+            label: Text Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#ffa891","#149dcc","#ff3366","#000000","#e7e6e6"]
+            default: "#149dcc"
+            span: left                                 
+        title_w:
+            label: 'Title'
+            span: left
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[form1]                                          
+        description_w:
+            label: 'Description'
+            span: left
+            type: text                
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[form1]                                         
+        color:
+            label: Color button
+            type: balloon-selector            
+            span: right 
+            options:            
+                btn-success: Success                                 
+                btn-primary: Primary                
+                btn-info: Info
+                btn-warning: Warning
+                btn-dark: Dark
+                btn-danger: Danger 
+                condition: value[form2] 
+        phone:
+            label: 'Phone'
+            span: left
+            type: text                      
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[form2]
+        email:
+            label: 'Email'
+            span: left
+            type: text                      
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[form2]                                                                                                           
+        on_off_name:
+            label: Name (on-off)
+            span: left
+            type: switch                                             
+        on_off_email:
+            label: Email (on-off)
+            span: right
+            type: switch             
+        on_off_phone:
+            label: Phone (on-off)
+            span: left
+            type: switch            
+        on_off_message:
+            label: Message (on-off)
+            span: right
+            type: switch                           
+contacts:   
+    name: Contacts
+    description: Contact Pages
+    icon: icon-address-book-o
+    fields:   
+        section_contacts_section:
+            label: Contacts
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'                               
+        _info_block_v:
+            tab: Contact Block
+            type: section
+            span: right
+            label: Contact Block 
+            comment: <img src="/storage/app/media/dropdown-images/Contacts/contacts.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact]     
+        _info_block_v1:
+            tab: Contact Block
+            type: section
+            span: right
+            label: Contact Block 
+            comment: <img src="/storage/app/media/dropdown-images/Contacts/contacts1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact1]
+        _info_block_v2:
+            tab: Contact Block
+            type: section
+            span: right
+            label: Contact Block 
+            comment: <img src="/storage/app/media/dropdown-images/Contacts/contacts2.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact2]
+        _info_block_v3:
+            tab: Contact Block
+            type: section
+            span: right
+            label: Contact Block 
+            comment: <img src="/storage/app/media/dropdown-images/Contacts/contacts3.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact3]                             
+        block_layout: 
+            tab: Entry Form Blocks
+            label: Entry Form pages
+            type: dropdown
+            span: left
+            default: 'tab'
+            options:
+                contact: Contact
+                contact1: Contact1
+                contact2: Contact2
+                contact3: Contact3 
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two          
+        text_color:
+            label: Text Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#ffa891","#149dcc","#ff3366","#000000","#e7e6e6"]
+            default: "#149dcc"
+            span: left                
+        address:
+            label: 'Address'
+            span: full
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact]                                         
+        phone:
+            label: 'Phone'
+            span: full
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact]                                                 
+        email:
+            label: 'Email'
+            span: full
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact]
+        address_c:
+            label: 'Address'
+            span: full
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact1]                                         
+        phone_c:
+            label: 'Phone'
+            span: full
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact1]                                                 
+        email_c:
+            label: 'Email'
+            span: full
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact1]
+        address_a:
+            label: 'Address'
+            span: full
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact2]                                         
+        phone_a:
+            label: 'Phone'
+            span: full
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact2]                                                 
+        email_a:
+            label: 'Email'
+            span: full
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact2]
+        work:
+            label: 'Working Hours'
+            span: full
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact2] 
+        address_h:
+            label: 'Address'
+            span: full
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact3]                                         
+        phone_h:
+            label: 'Phone'
+            span: full
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact3]                                                 
+        email_h:
+            label: 'Email'
+            span: full
+            type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[contact3]   
+maps:   
+    name: Maps
+    description: Map Pages
+    icon: icon-map-marker
+    fields:  
+        section_maps_section:
+            label: Maps
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'                                
+        _info_block_v:
+            tab: Map Block
+            type: section
+            span: right
+            label: Map Block 
+            comment: <img src="/storage/app/media/dropdown-images/maps/maps.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[map]
+        _info_block_v1:
+            tab: Map Block
+            type: section
+            span: right
+            label: Map Block 
+            comment: <img src="/storage/app/media/dropdown-images/maps/maps1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[map1]         
+        block_layout: 
+            tab: Map Blocks
+            label: Map pages
+            type: dropdown
+            span: left
+            default: 'tab'
+            options:
+                map: Map
+                map1: Map1  
+socials:   
+    name: Social Blocks
+    description: Social Pages
+    icon: icon-facebook
+    fields:    
+        section_socials_section:
+            label: Socials
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'                              
+        _info_block_v:
+            tab: Social Block
+            type: section
+            span: right
+            label: Social Block 
+            comment: <img src="/storage/app/media/dropdown-images/Socials/socials.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[social]
+        _info_block_v1:
+            tab: Social Block
+            type: section
+            span: right
+            label: Social Block 
+            comment: <img src="/storage/app/media/dropdown-images/Socials/socials1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[social1]
+        _info_block_v2:
+            tab: Social Block
+            type: section
+            span: right
+            label: Social Block 
+            comment: <img src="/storage/app/media/dropdown-images/Socials/socials2.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[social2]                 
+        block_layout: 
+            tab: Map Blocks
+            label: Map pages
+            type: dropdown
+            span: left
+            default: 'tab'
+            options:
+                social: Social        
+                social1: Social1
+                social2: Social2  
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two                                                                                
+        icon:
+            label: Add Icon
+            prompt: 'Add new icon'
+            span: left
+            type: repeater
+            form: 
+                fields:
+                    name:
+                        label: Name
+                        span: left
+                        type: text
+                    icon:
+                        label: 'Icon'
+                        span: right
+                        type: text
+                    url:
+                        label: URL
+                        span: left
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[social]
+        icon_w:
+            label: Add Icon
+            prompt: 'Add new icon'
+            span: left
+            type: repeater
+            form: 
+                fields:
+                    name:
+                        label: Name
+                        span: left
+                        type: text
+                    icon:
+                        label: 'Icon'
+                        span: right
+                        type: text
+                    url:
+                        label: URL
+                        span: left
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[social1]                    
+        on_off_facebook:
+            label: Facebook (on-off)
+            span: left
+            type: switch      
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[social2] 
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#ffa891","#149dcc","#ff3366","#000000","#e7e6e6"]
+            default: "#149dcc"
+            span: right
+        on_off_twitter:
+            label: Twitter (on-off)
+            span: left
+            type: switch      
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[social2] 
+        text_color:
+            label: Text Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: right    
+        on_off_google:
+            label: Google (on-off)
+            span: left
+            type: switch      
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[social2] 
+        title:
+            label: 'Title'
+            span: right
+            type: text 
+        on_off_vk:
+            label: VK (on-off)
+            span: left
+            type: switch      
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[social2] 
+        on_off_ok:
+            label: OK (on-off)
+            span: left
+            type: switch      
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[social2] 
+        on_off_pinterest:
+            label: Pinterest (on-off)
+            span: left
+            type: switch      
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[social2]
+        on_off_email:
+            label: Mail.ru (on-off)
+            span: left
+            type: switch      
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[social2]   
+reviews:
+    name: Reviews
+    description: Review Pages
+    icon: icon-file-image-o
+    fields:    
+        section_reviews_section:
+            label: Reviews
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'                              
+        _review_block_v:
+            tab: Reviews Block
+            type: section
+            span: right
+            label: Reviews Block 
+            comment: <img src="/storage/app/media/dropdown-images/Reviews/reviews.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[review]    
+        _review_block_v1:
+            tab: Reviews Block
+            type: section
+            span: right
+            label: Reviews Block 
+            comment: <img src="/storage/app/media/dropdown-images/Reviews/reviews1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[review1]    
+        _review_block_v2:
+            tab: Reviews Block
+            type: section
+            span: right
+            label: Reviews Block 
+            comment: <img src="/storage/app/media/dropdown-images/Reviews/reviews2.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[review2]    
+        _review_block_v3:
+            tab: Reviews Block
+            type: section
+            span: right
+            label: Reviews Block 
+            comment: <img src="/storage/app/media/dropdown-images/Reviews/reviews3.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[review3] 
+        _review_block_v4:
+            tab: Reviews Block
+            type: section
+            span: right
+            label: Reviews Block 
+            comment: <img src="/storage/app/media/dropdown-images/Reviews/reviews4.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[review4]    
+        _review_block_v5:
+            tab: Reviews Block
+            type: section
+            span: right
+            label: Reviews Block 
+            comment: <img src="/storage/app/media/dropdown-images/Reviews/reviews5.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[review5]                               
+        block_layout: 
+            tab: Review Blocks
+            label: Review pages
+            type: dropdown
+            span: left
+            default: 'tab'
+            options:
+                review: review
+                review1: review1
+                review2: review2
+                review3: review3
+                review4: review4
+                review5: review5
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two         
+        add_item:
+            label: Add Item
+            prompt: 'Add new item'
+            span: left
+            type: repeater
+            form: 
+                fields:
+                    description:
+                        label: Description
+                        span: left
+                        type: text
+                    text:
+                        label: 'Text'
+                        span: right
+                        type: text
+                    text1:
+                        label: Text
+                        span: left
+                        type: text                                        
+                    image:
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: right         
+    
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#ffa891","#149dcc","#ff3366","#000000","#e7e6e6"]
+            default: "#149dcc"
+            span: right
+        text_color:
+            label: Text Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: right 
+        title:
+            label: 'Title'
+            span: right
+            type: text
+        description:
+            label: 'Description'
+            span: right
+            type: text
+        item_color:
+            label: Item Color    
+            type: colorpicker
+            availableColors: ["#00aaf9","#56eeff","#fcaffc","#ffa891","#000000","#e7e6e6"]
+            default: "#00aaf9"
+            span: right  
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[review2]  
+        background_image:
+            label: Background Image
+            type: mediafinder
+            mode: image
+            span: right 
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[review1]
+        background_image_w:
+            label: Background Image
+            type: mediafinder
+            mode: image
+            span: right 
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[review2] 
+clients:
+    name: Clients
+    description: Client Pages
+    icon: icon-suitcase
+    fields:      
+        section_clients_section:
+            label: Clients
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'                            
+        _clients_block_v:
+            tab: Clients Block
+            type: section
+            span: right
+            label: Clients Block 
+            comment: <img src="/storage/app/media/dropdown-images/Clients/clients.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[client]
+        block_layout: 
+            tab: Customer Blocks
+            label: Customer pages
+            type: dropdown
+            span: left
+            default: 'tab'
+            options:
+                client: Client 
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two         
+        add_item:
+            label: Add Item
+            prompt: 'Add new item'
+            span: left
+            type: repeater
+            form: 
+                fields:                              
+                    image:
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: left                                                                     
+        title:
+            label: 'Title'
+            span: right
+            type: text
+        description:
+            label: 'Description'
+            span: right
+            type: text
+        text_color:
+            label: Text Color    
+            type: colorpicker
+            availableColors: ["#00aaf9","#56eeff","#fcaffc","#ffa891","#000000","#e7e6e6"]
+            default: "#00aaf9"
+            span: right 
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#00aaf9","#56eeff","#fcaffc","#ffa891","#000000","#e7e6e6"]
+            default: "#00aaf9"
+            span: right 
+tables:
+    name: Tables
+    description: Table Pages
+    icon: icon-list-alt
+    fields:  
+        section_tables_section:
+            label: Tables
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'                                
+        _tables_block_v:
+            tab: Tables Block
+            type: section
+            span: right
+            label: Tables Block 
+            comment: <img src="/storage/app/media/dropdown-images/Tables/tables.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[table]
+        block_layout: 
+            tab: Table Blocks
+            label: Table pages
+            type: dropdown
+            span: left
+            default: 'tab'
+            options:
+                table: Table
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two          
+        title:
+            label: 'Title'
+            span: left
+            type: text
+        description:
+            label: 'Description'
+            span: left
+            type: text
+        text_color:
+            label: Text Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#000000","#e7e6e6"]
+            default: "#00aaf9"
+            span: left 
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#00aaf9","#56eeff","#fcaffc","#ffa891","#000000","#e7e6e6"]
+            default: "#00aaf9"
+            span: left 
+        table:
+            label: Table
+            type: richeditor
+            size: large
+            span: full    
+footers:
+    name: Footers
+    description: Footer Pages
+    icon: icon-get-pocket
+    fields:           
+        section_footers_section:
+            label: Footers
+            type: section
+            cssClass: 'p-a m-y control-scrollpanel'                       
+        _footer_block_v:
+            tab: Footers Block
+            type: section
+            span: right
+            label: Footers Block 
+            comment: <img src="/storage/app/media/dropdown-images/Footers/footer.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer]
+        _footer_block_v1:
+            tab: Footers Block
+            type: section
+            span: right
+            label: Footers Block 
+            comment: <img src="/storage/app/media/dropdown-images/Footers/footer1.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer1]
+        _footer_block_v2:
+            tab: Footers Block
+            type: section
+            span: right
+            label: Footers Block 
+            comment: <img src="/storage/app/media/dropdown-images/Footers/footer2.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer2]
+        _footer_block_v3:
+            tab: Footers Block
+            type: section
+            span: right
+            label: Footers Block 
+            comment: <img src="/storage/app/media/dropdown-images/Footers/footer3.png" class="img-responsive" />
+            commentHtml: true
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer3]                                    
+        block_layout: 
+            tab: Footer Blocks
+            label: Footer pages
+            type: dropdown
+            span: left
+            default: 'footer'
+            options:
+                footer: Footer
+                footer1: Footer1
+                footer2: Footer2
+                footer3: Footer3  
+        height:
+            label: Block Height 
+            type: balloon-selector                                     
+            span: left                                                  
+            options: 
+                3rem: Default           
+                6rem: Height-one                                 
+                9rem: Height-two                               
+        text_color:
+            label: Text Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#56eeff","#fcaffc","#ffa891","#000000","#e7e6e6"]
+            default: "#ffffff"
+            span: left 
+        background_color:
+            label: Background Color    
+            type: colorpicker
+            availableColors: ["#ffffff","#2e2e2e","#fcaffc","#ffa891","#000000","#e7e6e6"]
+            default: "#2e2e2e"
+            span: left 
+        image_logo_w:
+            label: Image-logo
+            type: mediafinder
+            mode: image
+            span: left
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer2]             
+        on_off_twitter:
+            label: Twitter (on-off)
+            span: left
+            type: switch                   
+        on_off_facebook:
+            label: Pinterest (on-off)
+            span: right
+            type: switch              
+        on_off_youtube:
+            label: Youtube (on-off)
+            span: left
+            type: switch                   
+        on_off_instagram:
+            label: Instagram (on-off)
+            span: right
+            type: switch                             
+        on_off_google:
+            label: Google (on-off)
+            span: left
+            type: switch  
+        on_off_behance:
+            label: Behance (on-off)
+            span: right
+            type: switch                                                                
+        image_logo:
+            label: Image-logo
+            type: mediafinder
+            mode: image
+            span: left
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer] 
+        address:
+            label: Address
+            prompt: 'Add new item'
+            span: right
+            type: repeater
+            form: 
+                fields:
+                    text:
+                        label: 'Text'
+                        span: full
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer]            
+        contact:
+            label: Contact
+            prompt: 'Add new item'
+            span: right
+            type: repeater
+            form: 
+                fields:
+                    text:
+                        label: 'Text'
+                        span: full
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer]            
+        links:
+            label: Links
+            prompt: 'Add new item'
+            span: right
+            type: repeater
+            form: 
+                fields:
+                    text:
+                        label: 'Text'
+                        span: full
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer]
+        address_w:
+            label: Address
+            prompt: 'Add new item'
+            span: left
+            type: repeater
+            form: 
+                fields:
+                    text:
+                        label: 'Text'
+                        span: full
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer1]            
+        contact_w:
+            label: Contact
+            prompt: 'Add new item'
+            span: right
+            type: repeater
+            form: 
+                fields:
+                    text:
+                        label: 'Text'
+                        span: full
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer1]            
+        links_w:
+            label: Links
+            prompt: 'Add new item'
+            span: left
+            type: repeater
+            form: 
+                fields:
+                    text: 
+                        label: 'Text'
+                        span: full
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer1]                                                                        
+        feedback:
+            label: Feedback
+            prompt: 'Add new item'
+            span: right
+            type: repeater
+            form: 
+                fields:
+                    text: 
+                        label: 'Text'
+                        span: full
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer1]
+        news:
+            label: News
+            prompt: 'Add new item'
+            span: left
+            type: repeater
+            form: 
+                fields:
+                    text:
+                        label: 'Text'
+                        span: full
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer2]            
+        categorys:
+            label: Categorys
+            prompt: 'Add new item'
+            span: right
+            type: repeater
+            form: 
+                fields:
+                    text: 
+                        label: 'Text'
+                        span: full
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer2]                                                                        
+        subscribe:
+            label: Subscribe
+            prompt: 'Add new item'
+            span: left
+            type: repeater
+            form: 
+                fields:
+                    text: 
+                        label: 'Text'
+                        span: full
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer2]                                                                                        
+        add_item_c:
+            label: Add item
+            prompt: 'Add new item'
+            span: left
+            type: repeater
+            form: 
+                fields:
+                    text: 
+                        label: 'Text'
+                        span: full
+                        type: text
+            trigger:
+                action: show
+                field: block_layout
+                condition: value[footer3]                                                                                                

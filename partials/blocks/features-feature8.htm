@@ -1,0 +1,65 @@
+[viewBag]
+==
+<section class="features11 cid-rpoGXhOMG6" id="features-{{data.block_layout}}">
+
+    <div class="container">   
+        <div class="col-md-12">
+            <div class="media-container-row">
+                <div class="mbr-figure m-auto" style="width: 50%;">
+                    <img src="{{data.image_feature|media}}" alt="ITmaker" title="">
+                </div>
+                <div class=" align-left aside-content">
+                    <h2 class="mbr-title pt-2 mbr-fonts-style display-2">
+                        {{data.title_feature}}
+                    </h2>
+                    <div class="mbr-section-text">
+                        <p class="mbr-text mb-5 pt-3 mbr-light mbr-fonts-style display-5">
+                        {{data.description_feature}}
+                        </p>
+                    </div>
+
+                    <div class="block-content">
+                    {% for item in data.add_card_s7 %}
+                        <div class="card p-3 pr-3">
+                            <div class="media">
+                                <div class=" align-self-center card-img pb-3">
+                                    <span class="{{item.icon}}" style="color: {{item.color_icon}};!ipmortant"></span>
+                                </div>     
+                                <div class="media-body">
+                                    <h4 class="card-title mbr-fonts-style display-7">
+                                        {{item.title}}
+                                    </h4>
+                                </div>
+                            </div>                
+
+                            <div class="card-box">
+                                <p class="block-text mbr-fonts-style display-7">
+                                   {{item.description}} 
+                                </p>
+                            </div>
+                        </div>
+                    {% endfor %}    
+                       
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>          
+</section>
+
+
+
+
+
+<style>
+#features-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#features-{{data.block_layout}} h4, #features-{{data.block_layout}} p, #features-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#features-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

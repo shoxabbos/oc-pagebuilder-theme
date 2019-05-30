@@ -1,0 +1,35 @@
+[viewBag]
+==
+<section class="mbr-section content5 cid-rpoGCjBefi mbr-parallax-background" id="content-{{data.block_layout}}">
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1">
+                    {{data.title}}
+                </h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5">
+                    {{data.description}}
+                </h3>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<style>
+#content-{{data.block_layout}}{
+        background-image: url({{data.background_image|media}})!important;        
+    }
+#content-{{data.block_layout}} h2, #content-{{data.block_layout}} h3{    
+        color: {{data.text_color}}!important;
+    }
+#content-{{data.block_layout}}{
+        padding-top: {{data.height}}!important;
+        padding-bottom: {{data.height}}!important;    
+    }                    
+</style>

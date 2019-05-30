@@ -1,0 +1,6 @@
+name: ITmaker
+description: 'ITmaker group programming'
+author: 'Bekhzod Juraev'
+homepage: ''
+code: ''
+form: config/fields.yaml

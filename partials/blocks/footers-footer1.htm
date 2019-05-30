@@ -1,0 +1,122 @@
+[viewBag]
+==
+<section class="cid-rpoJ4TnxV8" id="footer-{{data.block_layout}}">
+
+    <div class="container">
+        <div class="media-container-row content mbr-white">
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                
+                <div class="col-12 mb-5">
+                    <strong>{{"Адрес"|_}}</strong>                    
+                    <p class="mbr-text pt-4 m-0"></p>
+                    {% for item in data.address_w %}    
+                    <p class="mbr-text">
+                        {{item.text}}
+                    </p>
+                    {% endfor %}    
+                </div>
+                
+                <div class="col-12">
+                    <strong>{{"Контакты"|_}}</strong>
+                    <p class="mbr-text pt-4 m-0"></p>
+                    {% for item in data.contact_w %}        
+                    <p class="mbr-text">
+                        {{item.text}}
+                    </p>    
+                    {% endfor %}    
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                
+                <div class="col-12 mb-3">
+                    <strong>{{"Ссылки"|_}}</strong>
+                    {% for item in data.links_w %}        
+                    <p class="mbr-text m-0">
+                        <a class="text-primary" href="https://itmaker.uz/">{{item.text}}</a>
+                    </p>
+                    {% endfor %}    
+                </div>               
+                
+                <div class="col-12">
+                    <strong>{{"Обратная связь"|_}}</strong>                    
+                    <p class="mbr-text"></p>
+                    {% for item in data.feedback %}                
+                    <p class="mbr-text">
+                        {{item.text}}
+                    </p>
+                    {% endfor %}    
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCx3d07zxHPLvkFBLlAR3Ng8a9wsAsGoJ8&amp;q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw" allowfullscreen=""></iframe></div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="media-container-row">
+                <div class="col-sm-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="media-container-row mbr-white">
+                <div class="col-sm-6 copyright">
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        {{"© Copyright 2019 ITmaker - All Rights Reserved"|_}}
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-list align-right">
+                        <div class="soc-item {{ data.on_off_twitter == 1 ? 'd-none' : ''}}">
+                            <a href="https://twitter.com" target="_blank">
+                                <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item {{ data.on_off_facebook == 1 ? 'd-none' : ''}}">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item {{ data.on_off_youtube == 1 ? 'd-none' : ''}}">
+                            <a href="https://www.youtube.com" target="_blank">
+                                <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item {{ data.on_off_instagram == 1 ? 'd-none' : ''}}">
+                            <a href="https://instagram.com" target="_blank">
+                                <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item {{ data.on_off_google == 1 ? 'd-none' : ''}}">
+                            <a href="https://plus.google.com" target="_blank">
+                                <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item {{ data.on_off_behance == 1 ? 'd-none' : ''}}">
+                            <a href="https://www.behance.net" target="_blank">
+                                <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<style>
+#footer-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#footer-{{data.block_layout}} h4, #footer-{{data.block_layout}} h3, #footer-{{data.block_layout}} p, #footer-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#footer-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

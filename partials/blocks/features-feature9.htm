@@ -1,0 +1,87 @@
+[viewBag]
+==
+<section class="features12 cid-rpoGY13mPa" id="features-{{data.block_layout}}">
+
+    <div class="container">
+        <h2 class="mbr-section-title pb-2 mbr-fonts-style display-2">
+            {{data.title_feature9}}
+        </h2>
+        <h3 class="mbr-section-subtitle pb-3 mbr-fonts-style display-5">
+            {{data.description_feature9}}
+        </h3>
+
+        <div class="media-container-row pt-5">
+            <div class="block-content align-right">
+            {% for key, item in data.add_card_s8 %}
+                {% if key <= 2 %}            
+                <div class="card pl-3 pr-3 pb-5">
+                    <div class="mbr-card-img-title">
+                        <div class="card-img pb-3">
+                             <span class="{{item.icon}}" style="color: {{item.color_icon}};!ipmortant"></span>
+                        </div>
+                        <div class="mbr-crt-title">
+                            <h4 class="card-title py-2 mbr-crt-title mbr-fonts-style display-7">
+                                {{item.title}}                     
+                            </h4>
+                        </div>
+                    </div>                
+
+                    <div class="card-box">
+                        <p class="mbr-text mbr-section-text mbr-fonts-style display-7">
+                            {{item.description}}
+                        </p>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}    
+
+            </div>
+
+            <div class="mbr-figure m-auto" style="width: 50%;">
+                <img src="{{data.image_feature9|media}}" alt="ITmaker" title="">
+            </div>
+
+            <div class="block-content align-left">
+            {% for key, item in data.add_card_s8 %}
+                {% if key > 2 %}            
+                <div class="card pl-3 pr-3 pb-5">
+                    <div class="mbr-card-img-title">
+                        <div class="card-img pb-3">
+                             <span class="{{item.icon}}" style="color: {{item.color_icon}};!ipmortant"></span>
+                        </div>
+                        <div class="mbr-crt-title">
+                            <h4 class="card-title py-2 mbr-crt-title mbr-fonts-style display-7">
+                                {{item.title}}                     
+                            </h4>
+                        </div>
+                    </div>                
+
+                    <div class="card-box">
+                        <p class="mbr-text mbr-section-text mbr-fonts-style display-7">
+                            {{item.description}}
+                        </p>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %} 
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<style>
+#features-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important;        
+    }
+#features-{{data.block_layout}} h4, #features-{{data.block_layout}} h3, #features-{{data.block_layout}} p, #features-{{data.block_layout}} h2{    
+        color: {{data.text_color}}!important;
+    }      
+#features-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+        padding-bottom: {{data.height}} !important;        
+    }             
+</style>

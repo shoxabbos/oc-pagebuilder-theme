@@ -1,0 +1,63 @@
+[viewBag]
+==
+<section class="counters2 counters cid-rpoGt5TAhO" id="counters-{{data.block_layout}}">
+
+    <div class="container pt-4 mt-2">
+        <div class="media-container-row">
+            <div class="media-block" style="width: 49%;">
+                <h2 class="mbr-section-title pb-3 align-left mbr-fonts-style display-2 title">
+                    {{data.title}}
+                </h2>
+                <h3 class="mbr-section-subtitle pb-5 align-left mbr-fonts-style display-5 content">
+                    {{data.content}}
+                </h3>
+                <div class="mbr-figure">
+                    <img src="{{data.image_counter1|media}}">
+                </div>
+            </div>
+            <div class="cards-block">
+                <div class="cards-container">
+                    
+                    {% for item in data.cards_counter1 %}
+                        <div class="card px-3 align-left col-12 col-md-6">
+                            <div class="panel-item p-3">
+                                <div class="card-img pb-3">
+                                    <span class="{{item.icon}} pr-2"></span>
+                                    <h3 class="count py-3 mbr-fonts-style display-2 title">
+                                        {{item.title}}
+                                    </h3>
+                                </div>
+                                <div class="card-text">
+                                    <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7 title">
+                                        {{item.subtitle}}
+                                    </h4>
+                                    <p class="mbr-content-text mbr-fonts-style display-7 content">
+                                        {{item.content}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}    
+                                  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<style>
+#counters-{{data.block_layout}}{
+        background-color: {{data.background_color}}!important; 
+    } 
+#counters-{{data.block_layout}} .title{
+        color: {{data.title_color}};
+    }  
+#counters-{{data.block_layout}} .content{    
+        color: {{data.description_color}};
+    }
+#counters-{{data.block_layout}}{
+        padding-top: {{data.height}} !important;        
+    }             
+</style>

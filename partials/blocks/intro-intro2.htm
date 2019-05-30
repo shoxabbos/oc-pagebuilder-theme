@@ -1,0 +1,43 @@
+[viewBag]
+==
+<section class="header1 cid-rpoGe4kFaq mbr-parallax-background" id="intro-{{data.block_layout}}">
+
+    <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(20, 157, 204);">
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="mbr-white col-md-10">
+                <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">
+                    {{data.title == empty ? 'Intro Blocks' : data.title }}
+                </h1>
+                <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2">
+                    {{data.subtitle == empty ? 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit dolor dolore pariatur tenetur exercitationem optio' : data.subtitle }}
+                </h3>
+                <p class="mbr-text align-center pb-3 mbr-fonts-style display-5">
+                    {{data.content == empty ? 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit dolor dolore pariatur tenetur exercitationem optio' : data.subtitle }}
+                </p>
+                {% for item in data.button_left %}
+                <div class="mbr-section-btn align-center"><a class="btn btn-md {{item.color}} display-4" href="https://mobirise.co">
+                        <span class="mbr-iconfont mbri-file"></span>{{ item.text == empty ? 'MORE' : item.text }}</a>
+                </div>
+                {% endfor %}
+            </div>            
+        </div>
+    </div>
+
+</section>
+
+
+<style>
+#intro-{{data.block_layout}}{
+        background-image: url({{data.background_image_intro2|media}})!important;        
+    }
+#intro-{{data.block_layout}} h1, #intro-{{data.block_layout}} h3, #intro-{{data.block_layout}} p {
+        color: {{data.text_color}};
+    }   
+#intro-{{data.block_layout}}{
+        padding-top: {{data.height}}!important;
+        padding-bottom: {{data.height}}!important;    
+    }            
+</style>

@@ -1,0 +1,47 @@
+[viewBag]
+==
+<section class="carousel slide cid-rpoGAFpJF3" data-interval="false" id="slider1-w">
+
+    <div class="full-screen">
+    	<div class="mbr-slider slide carousel" data-pause="true" data-keyboard="false" data-ride="false" data-interval="false">
+    		<ol class="carousel-indicators">
+    		{% for key, item in data.slider_item %}    		    
+    	        <li data-app-prevent-settings="" data-target="#slider1-w" class="{{ key == 1 ? 'active' : ''}}" data-slide-to="0"></li>    	       
+    		{% endfor %}	
+    			
+    		</ol>
+    		<div class="carousel-inner" role="listbox">
+    			
+			{% for key, item in data.slider_item %}
+    			<div class="carousel-item slider-fullscreen-image {{key == 1 ? 'active' : '' }}" data-bg-video-slide="false" style="background-image: url({{item.image|media}});">
+    				<div class="container container-slide">
+    					<div class="image_wrapper">
+    						<div class="mbr-overlay"></div>
+    						<img src="{{item.image|media}}">
+    						<div class="carousel-caption justify-content-center">
+    							<div class="col-10 align-center  {{item.locations}}">
+    								<h2 class="mbr-fonts-style display-1">{{item.title}}</h2>
+    								<p class="lead mbr-text mbr-fonts-style display-5">{{item.description}}</p>
+    								<div class="mbr-section-btn" buttons="0">
+    								    {% for new in item.add_content %}
+    									    <a class="btn {{new.color_button_left}} display-4 {{new.on_off_left == 1 ? 'd-none' : ''}}" href="{{new.url_left}}">{{new.button_left}}</a> 
+    									{% endfor %}    
+    									{% for new in item.add_content %}
+    									    <a class="btn  {{new.color_button_right}} display-4 {{new.on_off_right == 1 ? 'd-none' : ''}}" href="{{new.url_right}}">{{new.button_right}}</a>
+    									{% endfor %}        
+    								</div>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		{% endfor %}	
+
+    	
+    		<a data-app-prevent-settings="" class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#slider1-w"><span aria-hidden="true" class="mbri-left mbr-iconfont"></span><span class="sr-only">Previous</span>
+    		</a>
+    		<a data-app-prevent-settings="" class="carousel-control carousel-control-next" role="button" data-slide="next" href="#slider1-w"><span aria-hidden="true" class="mbri-right mbr-iconfont"></span><span class="sr-only">Next</span>
+    		</a>
+    	</div>
+    </div>
+</section>
