@@ -12,7 +12,7 @@ menu:
             type: section
             span: right
             label: Menu Block A
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/menu.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/menu.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -23,7 +23,7 @@ menu:
             type: section
             span: right
             label: Menu Block A1
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/menu1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/menu1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -148,9 +148,9 @@ intro:
         _intro_block_v:
             tab: Intro Block
             type: section
-            span: right
+            span: right 
             label: Intro Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Intro/intro.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Intro/intro.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -161,7 +161,7 @@ intro:
             type: section
             span: right
             label: Intro Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Intro/intro1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Intro/intro1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -173,7 +173,7 @@ intro:
             type: section
             span: right
             label: Intro Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Intro/intro2.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Intro/intro2.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -184,7 +184,7 @@ intro:
             type: section
             span: right
             label: Intro Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Intro/intro3.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Intro/intro3.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -195,7 +195,7 @@ intro:
             type: section
             span: right
             label: Intro Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Intro/intro4.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Intro/intro4.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -206,7 +206,7 @@ intro:
             type: section
             span: right
             label: Intro Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Intro/intro5.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Intro/intro5.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -217,7 +217,7 @@ intro:
             type: section
             span: right
             label: Intro Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Intro/intro6.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Intro/intro6.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -228,7 +228,7 @@ intro:
             type: section
             span: right
             label: Intro Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Intro/intro7.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Intro/intro7.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -239,7 +239,7 @@ intro:
             type: section
             span: right
             label: Intro Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Intro/intro8.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Intro/intro8.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -250,7 +250,7 @@ intro:
             type: section
             span: right
             label: Intro Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Intro/intro9.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Intro/intro9.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -261,7 +261,7 @@ intro:
             type: section
             span: right
             label: Intro Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Intro/intro10.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Intro/intro10.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -272,7 +272,7 @@ intro:
             type: section
             span: right
             label: Intro Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Intro/intro11.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Intro/intro11.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -283,7 +283,7 @@ intro:
             type: section
             span: right
             label: Intro Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Intro/intro12.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Intro/intro12.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -630,7 +630,7 @@ images:
             type: section
             span: right
             label: Image Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Image_blocks/image.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Image_blocks/image.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -669,7 +669,7 @@ videos:
             type: section
             span: right
             label: Video Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/video-screen.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/video-screen.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -703,7 +703,7 @@ sliders:
             type: section
             span: right
             label: Slider Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Slider/slider-screen.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Slider/slider-screen.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -714,7 +714,7 @@ sliders:
             type: section
             span: right
             label: Slider Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Slider/slider2-screen.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Slider/slider2-screen.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -858,7 +858,7 @@ gallerys:
             type: section
             span: right
             label: Gallery Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Gallery/gallery.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Gallery/gallery.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -869,7 +869,7 @@ gallerys:
             type: section
             span: right
             label: Gallery Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Gallery/gallery3.png" class="img-responsive" />            
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Gallery/gallery3.png" class="img-responsive" />            
             commentHtml: true
             trigger:
                 action: show
@@ -880,7 +880,7 @@ gallerys:
             type: section
             span: right
             label: Gallery Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Gallery/gallery1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Gallery/gallery1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -891,7 +891,7 @@ gallerys:
             type: section
             span: right
             label: Gallery Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Gallery/gallery2.png" class="img-responsive" />            
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Gallery/gallery2.png" class="img-responsive" />            
             commentHtml: true
             trigger:
                 action: show
@@ -979,7 +979,7 @@ articles:
             type: section
             span: right
             label: Article Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Articles/article.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Articles/article.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -990,7 +990,7 @@ articles:
             type: section
             span: right
             label: Article Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Articles/article1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Articles/article1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1001,7 +1001,7 @@ articles:
             type: section
             span: right
             label: Article Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Articles/article2.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Articles/article2.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1012,7 +1012,7 @@ articles:
             type: section
             span: right
             label: Article Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Articles/article3.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Articles/article3.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1023,7 +1023,7 @@ articles:
             type: section
             span: right
             label: Article Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Articles/article4.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Articles/article4.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1034,7 +1034,7 @@ articles:
             type: section
             span: right
             label: Article Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Articles/article5.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Articles/article5.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1045,7 +1045,7 @@ articles:
             type: section
             span: right
             label: Article Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Articles/article6.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Articles/article6.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1056,7 +1056,7 @@ articles:
             type: section
             span: right
             label: Article Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Articles/article7.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Articles/article7.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1067,7 +1067,7 @@ articles:
             type: section
             span: right
             label: Article Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Articles/article8.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Articles/article8.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1078,7 +1078,7 @@ articles:
             type: section
             span: right
             label: Article Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Articles/article9.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Articles/article9.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1089,7 +1089,7 @@ articles:
             type: section
             span: right
             label: Article Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Articles/article10.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Articles/article10.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1100,7 +1100,7 @@ articles:
             type: section
             span: right
             label: Article Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Articles/article11.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Articles/article11.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1111,7 +1111,7 @@ articles:
             type: section
             span: right
             label: Article Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Articles/article12.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Articles/article12.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1504,7 +1504,7 @@ features:
             type: section
             span: right
             label: Feature Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Features/feature.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Features/feature.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1515,7 +1515,7 @@ features:
             type: section
             span: right
             label: Feature Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Features/feature1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Features/feature1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1526,7 +1526,7 @@ features:
             type: section
             span: right
             label: Feature Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Features/feature2.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Features/feature2.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1537,7 +1537,7 @@ features:
             type: section
             span: right
             label: Feature Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Features/feature3.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Features/feature3.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1548,7 +1548,7 @@ features:
             type: section
             span: right
             label: Feature Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Features/feature4.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Features/feature4.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1559,7 +1559,7 @@ features:
             type: section
             span: right
             label: Feature Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Features/feature5.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Features/feature5.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1570,7 +1570,7 @@ features:
             type: section
             span: right
             label: Feature Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Features/feature6.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Features/feature6.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1581,7 +1581,7 @@ features:
             type: section
             span: right
             label: Feature Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Features/feature7.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Features/feature7.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1592,7 +1592,7 @@ features:
             type: section
             span: right
             label: Feature Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Features/feature8.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Features/feature8.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1603,7 +1603,7 @@ features:
             type: section
             span: right
             label: Feature Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Features/feature9.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Features/feature9.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1614,7 +1614,7 @@ features:
             type: section
             span: right
             label: Feature Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Features/feature10.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Features/feature10.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1625,7 +1625,7 @@ features:
             type: section
             span: right
             label: Feature Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Features/feature11.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Features/feature11.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -1636,7 +1636,7 @@ features:
             type: section
             span: right
             label: Feature Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Features/feature12.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Features/feature12.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -2297,7 +2297,7 @@ price:
             type: section
             span: right
             label: Price Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Price-Tables/price.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Price-Tables/price.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -2308,7 +2308,7 @@ price:
             type: section
             span: right
             label: Price Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Price-Tables/price1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Price-Tables/price1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -2319,7 +2319,7 @@ price:
             type: section
             span: right
             label: Price Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Price-Tables/price2.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Price-Tables/price2.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -2536,7 +2536,7 @@ services:
             type: section
             span: right
             label: Service Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Services/services.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Services/services.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -2547,7 +2547,7 @@ services:
             type: section
             span: right
             label: Service Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Services/services1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Services/services1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -2558,7 +2558,7 @@ services:
             type: section
             span: right
             label: Service Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Services/services2.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Services/services2.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -2569,7 +2569,7 @@ services:
             type: section
             span: right
             label: Service Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Services/services3.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Services/services3.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -2580,7 +2580,7 @@ services:
             type: section
             span: right
             label: Service Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Services/services4.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Services/services4.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -2847,7 +2847,7 @@ counters:
             type: section
             span: right
             label: Counter Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Counters/counters.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Counters/counters.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -2858,7 +2858,7 @@ counters:
             type: section
             span: right
             label: Counter Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Counters/counter1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Counters/counter1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -2869,7 +2869,7 @@ counters:
             type: section
             span: right
             label: Counter Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Counters/counter2.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Counters/counter2.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -2880,7 +2880,7 @@ counters:
             type: section
             span: right
             label: Counter Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Counters/counter3.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Counters/counter3.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -2891,7 +2891,7 @@ counters:
             type: section
             span: right
             label: Counter Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Counters/counter4.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Counters/counter4.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -2902,7 +2902,7 @@ counters:
             type: section
             span: right
             label: Counter Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Counters/counter5.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Counters/counter5.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3201,7 +3201,7 @@ countdowns:
             type: section
             span: right
             label: Countdown Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Countdown/countdown.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Countdown/countdown.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3212,7 +3212,7 @@ countdowns:
             type: section
             span: right
             label: Countdown Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Countdown/countdown1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Countdown/countdown1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3261,7 +3261,7 @@ progress:
             type: section
             span: right
             label: Progres Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Progress/progress.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Progress/progress.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3272,7 +3272,7 @@ progress:
             type: section
             span: right
             label: Progres Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Progress/progress1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Progress/progress1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3283,7 +3283,7 @@ progress:
             type: section
             span: right
             label: Progres Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Progress/progress2.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Progress/progress2.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3378,7 +3378,7 @@ timelines:
             type: section
             span: right
             label: Timeline Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Timelines/timelines.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Timelines/timelines.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3389,7 +3389,7 @@ timelines:
             type: section
             span: right
             label: Timeline Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Timelines/timelines1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Timelines/timelines1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3400,7 +3400,7 @@ timelines:
             type: section
             span: right
             label: Steps Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Timelines/steps.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Timelines/steps.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3411,7 +3411,7 @@ timelines:
             type: section
             span: right
             label: Steps Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Timelines/steps1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Timelines/steps1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3422,7 +3422,7 @@ timelines:
             type: section
             span: right
             label: Steps Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Timelines/steps2.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Timelines/steps2.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3600,7 +3600,7 @@ tabs:
             type: section
             span: right
             label: Drop Down Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/drop-down-text/d-d-text.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/drop-down-text/d-d-text.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3611,7 +3611,7 @@ tabs:
             type: section
             span: right
             label: Drop Down Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/drop-down-text/d-d-text1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/drop-down-text/d-d-text1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3622,7 +3622,7 @@ tabs:
             type: section
             span: right
             label: Drop Down Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/drop-down-text/d-d-text2.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/drop-down-text/d-d-text2.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3633,7 +3633,7 @@ tabs:
             type: section
             span: right
             label: Drop Down Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/drop-down-text/d-d-text3.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/drop-down-text/d-d-text3.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3644,7 +3644,7 @@ tabs:
             type: section
             span: right
             label: Drop Down Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/drop-down-text/accordion.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/drop-down-text/accordion.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3655,7 +3655,7 @@ tabs:
             type: section
             span: right
             label: Drop Down Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/drop-down-text/accordion1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/drop-down-text/accordion1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3966,7 +3966,7 @@ informations:
             type: section
             span: right
             label: Information Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Informations/information.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Informations/information.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3977,7 +3977,7 @@ informations:
             type: section
             span: right
             label: Information Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Informations/information1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Informations/information1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3988,7 +3988,7 @@ informations:
             type: section
             span: right
             label: Information Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Informations/information2.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Informations/information2.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -3999,7 +3999,7 @@ informations:
             type: section
             span: right
             label: Information Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Informations/information3.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Informations/information3.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4115,7 +4115,7 @@ forms:
             type: section
             span: right
             label: Entry Form Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Entry_Forms/entry_forms.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Entry_Forms/entry_forms.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4126,7 +4126,7 @@ forms:
             type: section
             span: right
             label: Entry Form Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Entry_Forms/entry_forms1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Entry_Forms/entry_forms1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4137,7 +4137,7 @@ forms:
             type: section
             span: right
             label: Entry Form Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Entry_Forms/entry_forms2.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Entry_Forms/entry_forms2.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4263,7 +4263,7 @@ contacts:
             type: section
             span: right
             label: Contact Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Contacts/contacts.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Contacts/contacts.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4274,7 +4274,7 @@ contacts:
             type: section
             span: right
             label: Contact Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Contacts/contacts1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Contacts/contacts1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4285,7 +4285,7 @@ contacts:
             type: section
             span: right
             label: Contact Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Contacts/contacts2.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Contacts/contacts2.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4296,7 +4296,7 @@ contacts:
             type: section
             span: right
             label: Contact Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Contacts/contacts3.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Contacts/contacts3.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4451,7 +4451,7 @@ maps:
             type: section
             span: right
             label: Map Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/maps/maps.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/maps/maps.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4462,7 +4462,7 @@ maps:
             type: section
             span: right
             label: Map Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/maps/maps1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/maps/maps1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4491,7 +4491,7 @@ socials:
             type: section
             span: right
             label: Social Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Socials/socials.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Socials/socials.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4502,7 +4502,7 @@ socials:
             type: section
             span: right
             label: Social Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Socials/socials1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Socials/socials1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4513,7 +4513,7 @@ socials:
             type: section
             span: right
             label: Social Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Socials/socials2.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Socials/socials2.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4669,7 +4669,7 @@ reviews:
             type: section
             span: right
             label: Reviews Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Reviews/reviews.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Reviews/reviews.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4680,7 +4680,7 @@ reviews:
             type: section
             span: right
             label: Reviews Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Reviews/reviews1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Reviews/reviews1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4691,7 +4691,7 @@ reviews:
             type: section
             span: right
             label: Reviews Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Reviews/reviews2.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Reviews/reviews2.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4702,7 +4702,7 @@ reviews:
             type: section
             span: right
             label: Reviews Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Reviews/reviews3.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Reviews/reviews3.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4713,7 +4713,7 @@ reviews:
             type: section
             span: right
             label: Reviews Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Reviews/reviews4.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Reviews/reviews4.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4724,7 +4724,7 @@ reviews:
             type: section
             span: right
             label: Reviews Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Reviews/reviews5.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Reviews/reviews5.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4838,7 +4838,7 @@ clients:
             type: section
             span: right
             label: Clients Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Clients/clients.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Clients/clients.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4906,7 +4906,7 @@ tables:
             type: section
             span: right
             label: Tables Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Tables/tables.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Tables/tables.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4967,7 +4967,7 @@ footers:
             type: section
             span: right
             label: Footers Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Footers/footer.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Footers/footer.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4978,7 +4978,7 @@ footers:
             type: section
             span: right
             label: Footers Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Footers/footer1.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Footers/footer1.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -4989,7 +4989,7 @@ footers:
             type: section
             span: right
             label: Footers Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Footers/footer2.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Footers/footer2.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
@@ -5000,7 +5000,7 @@ footers:
             type: section
             span: right
             label: Footers Block 
-            comment: <img src="/themes/itmaker/assets/media/dropdown-images/Footers/footer3.png" class="img-responsive" />
+            comment: <img src="https://raw.githubusercontent.com/bkjurayev/pagebuilder-src/master/dropdown-images/Footers/footer3.png" class="img-responsive" />
             commentHtml: true
             trigger:
                 action: show
