@@ -1,8 +1,5 @@
-name: 'PAGE BUILDER - Modular Theme'
+name: ITmaker
 description: 'ITmaker group programming'
-author: 'IT.MAKER'
-homepage: 'https://itmaker.uz'
-code: 'ITmaker'
-form: config/fields.yaml
-require:
-    - RainLab.Pages
+author: 'Bekhzod Juraev'
+homepage: ''
+code: ''
