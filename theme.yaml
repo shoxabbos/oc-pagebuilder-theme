@@ -3,3 +3,8 @@ description: 'ITmaker group programming'
 author: 'ITmaker'
 homepage: ''
 code: ''
+require:
+    - Rainlab.User
+    - Rainlab.Pages
+    - Rainlab.Translate
+    - Toughdeveloper.Imageresizer
